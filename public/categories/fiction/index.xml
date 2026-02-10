@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Fiction on My Zen Garden</title>
-    <link>http://localhost:1313/categories/fiction/</link>
+    <link>http://localhost:50263/categories/fiction/</link>
     <description>Recent content in Fiction on My Zen Garden</description>
     <generator>Hugo -- 0.147.4</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 10 Feb 2026 09:57:13 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/fiction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50263/categories/fiction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>夫人</title>
-      <link>http://localhost:1313/posts/%E5%A4%AB%E4%BA%BA/</link>
+      <link>http://localhost:50263/posts/%E5%A4%AB%E4%BA%BA/</link>
       <pubDate>Tue, 10 Feb 2026 09:57:13 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E5%A4%AB%E4%BA%BA/</guid>
+      <guid>http://localhost:50263/posts/%E5%A4%AB%E4%BA%BA/</guid>
       <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
     </item>
   </channel>
