@@ -31,9 +31,23 @@ hasCJKLanguage = true
   # 归档配置
   archive = { paginate = 20 }
   
-  # 搜索
+  # 启动搜索
   search = true
-  fuseOpts = { isCaseSensitive = false, minMatchCharLength = 2, threshold = 0.3, distance = 1000 }
+
+  # Fuse.js 搜索配置
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 2
+    limit = 10
+    showThumbnail = true
+    showSummary = true
+    showContent = true
+    highlight = true
+    keys = ["title", "permalink", "summary", "content"]
 
   
 # ======================
