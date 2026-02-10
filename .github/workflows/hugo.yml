@@ -62,25 +62,11 @@ jobs:
       
       # 步骤5：构建网站
       - name: Build with Hugo
-        env:
-          # 构建环境变量
-          HUGO_ENV: production
-          TZ: Asia/Shanghai  # 设置时区
         run: |
-          # 打印Hugo版本信息
-          hugo version
-          
-          # 清理并构建
           hugo \
-            --gc \                    # 垃圾回收，删除未使用的缓存文件
-            --minify \                # 压缩HTML、CSS、JS等
-            --cleanDestinationDir \   # 清理目标目录
-            --baseURL "https://vivian881027.github.io/"  # ⚠️ 修改这里！  
-          
-          # 显示构建统计
-          echo "构建完成！"
-          echo "生成文件数：$(find public -type f | wc -l)"
-          echo "总大小：$(du -sh public | cut -f1)"
+            --minify \
+            --gc \
+            --baseURL "https://vivian881027.github.io"      
       
       # 步骤6：上传构建产物
       - name: Upload artifact
