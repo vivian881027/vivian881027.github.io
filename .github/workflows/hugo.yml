@@ -1,0 +1,110 @@
+name: Deploy Hugo site Zen Garden to Pages
+
+on:
+  # 当推送到main分支时触发
+  push:
+    branches: ["main"]
+  
+  # 允许手动触发部署
+  workflow_dispatch:
+
+# 设置GITHUB_TOKEN权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 并发控制，防止同时部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# 环境变量
+env:
+  # Hugo版本（使用最新稳定版）
+  HUGO_VERSION: "0.140.0"
+  # 你的GitHub用户名（自动获取）
+  GITHUB_USER: ${{ github.repository_owner }}
+
+jobs:
+  # 构建作业
+  build:
+    runs-on: ubuntu-latest  # 使用最新的Ubuntu系统
+    
+    steps:
+      # 步骤1：检出代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # 重要：递归拉取子模块（主题）
+          fetch-depth: 0         # 获取所有历史，便于Hugo生成相关文章
+      
+      # 步骤2：安装Hugo（推荐使用peaceiris的action）
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true  # 必须使用扩展版，支持Sass/SCSS
+      
+      # 步骤3：安装Node.js（如果主题需要）
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # 使用LTS版本
+          cache: 'npm'       # 缓存npm依赖
+      
+      # 步骤4：安装项目依赖（如果有package.json）
+      - name: Install dependencies
+        run: |
+          # 如果有package.json，安装依赖
+          if [ -f "package.json" ]; then
+            npm ci --only=production
+          fi
+          # 如果有go.mod，安装Go模块
+          if [ -f "go.mod" ]; then
+            hugo mod get
+          fi
+      
+      # 步骤5：构建网站
+      - name: Build with Hugo
+        env:
+          # 构建环境变量
+          HUGO_ENV: production
+          TZ: Asia/Shanghai  # 设置时区
+        run: |
+          # 打印Hugo版本信息
+          hugo version
+          
+          # 清理并构建
+          hugo \
+            --gc \                    # 垃圾回收，删除未使用的缓存文件
+            --minify \                # 压缩HTML、CSS、JS等
+            --cleanDestinationDir \   # 清理目标目录
+            --baseURL "${{ github.event_name == 'workflow_dispatch' && 'https://' + env.GITHUB_USER + '.github.io' || 'https://' + env.GITHUB_USER + '.github.io' }}/"
+          
+          # 显示构建统计
+          echo "构建完成！"
+          echo "生成文件数：$(find public -type f | wc -l)"
+          echo "总大小：$(du -sh public | cut -f1)"
+      
+      # 步骤6：上传构建产物
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public  # 上传public目录
+
+  # 部署作业
+  deploy:
+    needs: build  # 依赖build作业完成
+    runs-on: ubuntu-latest
+    
+    # 部署环境配置
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      # 步骤7：部署到GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
