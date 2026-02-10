@@ -22,7 +22,7 @@ concurrency:
 # 环境变量
 env:
   # Hugo版本（使用最新稳定版）
-  HUGO_VERSION: "0.140.0"
+  HUGO_VERSION: "0.146.0"
   # 你的GitHub用户名（自动获取）
   GITHUB_USER: ${{ github.repository_owner }}
 
