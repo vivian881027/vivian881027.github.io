@@ -80,7 +80,7 @@ jobs:
             --gc \                    # 垃圾回收，删除未使用的缓存文件
             --minify \                # 压缩HTML、CSS、JS等
             --cleanDestinationDir \   # 清理目标目录
-            --baseURL "${{ github.event_name == 'workflow_dispatch' && 'https://' + env.GITHUB_USER + '.github.io' || 'https://' + env.GITHUB_USER + '.github.io' }}/"
+            --baseURL "https://vivian881027.github.io/"  # ⚠️ 修改这里！  
           
           # 显示构建统计
           echo "构建完成！"
