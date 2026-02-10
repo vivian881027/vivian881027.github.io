@@ -47,23 +47,18 @@ jobs:
           extended: true  # 必须使用扩展版，支持Sass/SCSS
       
       # 步骤3：安装Node.js（如果主题需要）
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'  # 使用LTS版本
-          cache: 'npm'       # 缓存npm依赖
+      #- name: Setup Node.js
+      #  uses: actions/setup-node@v4
+      #  with:
+      #    node-version: '20'  # 使用LTS版本
+      #    cache: 'npm'       # 缓存npm依赖
       
       # 步骤4：安装项目依赖（如果有package.json）
       - name: Install dependencies
         run: |
-          # 如果有package.json，安装依赖
-          if [ -f "package.json" ]; then
-            npm ci --only=production
-          fi
-          # 如果有go.mod，安装Go模块
-          if [ -f "go.mod" ]; then
-            hugo mod get
-          fi
+          # 只有在你需要Node.js依赖时才保留
+          # 否则可以删除整个步骤或留空
+          echo "没有Node.js依赖需要安装"
       
       # 步骤5：构建网站
       - name: Build with Hugo
