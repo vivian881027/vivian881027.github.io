@@ -12,7 +12,7 @@ hasCJKLanguage = true
 [params]
 
   # 主页信息
-  homeInfoParams = { Title = "Welcome to My Zen Garden", Content = "这是我的个人博客，记录学习和生活思考" }
+  homeInfoParams = { Title = "Welcome to My Zen Garden", Content = "三日打鱼：这是我的个人博客，记录学习和生活思考" }
   
   # 主题模式
   defaultTheme = "auto"  # light, dark, auto

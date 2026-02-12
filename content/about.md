@@ -4,4 +4,4 @@ draft = false
 title = 'About'
 +++
 
-A Daydreamer Who Loves Psychology
+A Daydreamer Who Loves Psychology：三日打鱼。
