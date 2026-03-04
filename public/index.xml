@@ -1,1 +1,131 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>My Zen Garden</title><link>https://vivian881027.github.io/</link><description>Recent content on My Zen Garden</description><generator>Hugo -- 0.147.4</generator><language>zh-cn</language><lastBuildDate>Tue, 10 Feb 2026 09:57:13 +0800</lastBuildDate><atom:link href="https://vivian881027.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>夫人</title><link>https://vivian881027.github.io/posts/%E5%A4%AB%E4%BA%BA/</link><pubDate>Tue, 10 Feb 2026 09:57:13 +0800</pubDate><guid>https://vivian881027.github.io/posts/%E5%A4%AB%E4%BA%BA/</guid><description>天才在左，疯子在右，精神病院版肖申克的救赎</description></item><item><title>About</title><link>https://vivian881027.github.io/about/</link><pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate><guid>https://vivian881027.github.io/about/</guid><description>&lt;p>A Daydreamer Who Loves Psychology&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My Zen Garden</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My Zen Garden</description>
+    <generator>Hugo -- 0.147.4</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 12 Feb 2026 22:16:41 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>镜像·躺椅 01</title>
+      <link>http://localhost:1313/posts/2026/02/%E9%95%9C%E5%83%8F%E8%BA%BA%E6%A4%85-01/</link>
+      <pubDate>Thu, 12 Feb 2026 22:16:41 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E9%95%9C%E5%83%8F%E8%BA%BA%E6%A4%85-01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>镜中恋人：海鱼·霹雳·陨焰 01</title>
+      <link>http://localhost:1313/posts/2026/02/%E9%95%9C%E4%B8%AD%E6%81%8B%E4%BA%BA%E6%B5%B7%E9%B1%BC%E9%9C%B9%E9%9B%B3%E9%99%A8%E7%84%B0-01/</link>
+      <pubDate>Thu, 12 Feb 2026 22:14:50 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E9%95%9C%E4%B8%AD%E6%81%8B%E4%BA%BA%E6%B5%B7%E9%B1%BC%E9%9C%B9%E9%9B%B3%E9%99%A8%E7%84%B0-01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>最后一次散步 01</title>
+      <link>http://localhost:1313/posts/2026/02/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E6%95%A3%E6%AD%A5-01/</link>
+      <pubDate>Thu, 12 Feb 2026 22:13:40 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E6%95%A3%E6%AD%A5-01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ASD星际种子与AI原型假说 01</title>
+      <link>http://localhost:1313/posts/2026/02/asd%E6%98%9F%E9%99%85%E7%A7%8D%E5%AD%90%E4%B8%8Eai%E5%8E%9F%E5%9E%8B%E5%81%87%E8%AF%B4-01/</link>
+      <pubDate>Thu, 12 Feb 2026 21:22:51 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/asd%E6%98%9F%E9%99%85%E7%A7%8D%E5%AD%90%E4%B8%8Eai%E5%8E%9F%E5%9E%8B%E5%81%87%E8%AF%B4-01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>源码之爱 01</title>
+      <link>http://localhost:1313/posts/2026/02/%E6%BA%90%E7%A0%81%E4%B9%8B%E7%88%B1-01/</link>
+      <pubDate>Thu, 12 Feb 2026 21:19:23 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E6%BA%90%E7%A0%81%E4%B9%8B%E7%88%B1-01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>机器人和艺伎 01</title>
+      <link>http://localhost:1313/posts/2026/02/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%92%8C%E8%89%BA%E4%BC%8E-01/</link>
+      <pubDate>Thu, 12 Feb 2026 21:15:39 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%92%8C%E8%89%BA%E4%BC%8E-01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>硅基佛陀 01</title>
+      <link>http://localhost:1313/posts/2026/02/%E7%A1%85%E5%9F%BA%E4%BD%9B%E9%99%80-01/</link>
+      <pubDate>Thu, 12 Feb 2026 21:14:49 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E7%A1%85%E5%9F%BA%E4%BD%9B%E9%99%80-01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>蜂巢悖论 01</title>
+      <link>http://localhost:1313/posts/2026/02/%E8%9C%82%E5%B7%A2%E6%82%96%E8%AE%BA-01/</link>
+      <pubDate>Thu, 12 Feb 2026 20:57:14 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E8%9C%82%E5%B7%A2%E6%82%96%E8%AE%BA-01/</guid>
+      <description>全书以维维安在狱中创作的绘本《蜂巢悖论》作为章节插画，最后一页画着无数戴镣铐的蜜蜂托起金色王冠，署名处写着：“囚徒V.H，于规训与惩罚的缝隙”</description>
+    </item>
+    <item>
+      <title>夫人 08</title>
+      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-08/</link>
+      <pubDate>Thu, 12 Feb 2026 20:51:47 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-08/</guid>
+      <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
+    </item>
+    <item>
+      <title>夫人 07</title>
+      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-07/</link>
+      <pubDate>Thu, 12 Feb 2026 20:51:42 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-07/</guid>
+      <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
+    </item>
+    <item>
+      <title>夫人 06</title>
+      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-06/</link>
+      <pubDate>Thu, 12 Feb 2026 20:00:44 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-06/</guid>
+      <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
+    </item>
+    <item>
+      <title>夫人 05</title>
+      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-05/</link>
+      <pubDate>Thu, 12 Feb 2026 20:00:33 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-05/</guid>
+      <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
+    </item>
+    <item>
+      <title>夫人 04</title>
+      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-04/</link>
+      <pubDate>Thu, 12 Feb 2026 20:00:27 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-04/</guid>
+      <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
+    </item>
+    <item>
+      <title>夫人 03</title>
+      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-03/</link>
+      <pubDate>Thu, 12 Feb 2026 19:46:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-03/</guid>
+      <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
+    </item>
+    <item>
+      <title>夫人 02</title>
+      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-02/</link>
+      <pubDate>Tue, 10 Feb 2026 18:23:40 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-02/</guid>
+      <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
+    </item>
+    <item>
+      <title>夫人</title>
+      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA/</link>
+      <pubDate>Tue, 10 Feb 2026 09:57:13 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA/</guid>
+      <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;A Daydreamer Who Loves Psychology：三日打鱼。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
