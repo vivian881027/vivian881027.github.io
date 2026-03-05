@@ -2,73 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Psychology on My Zen Garden</title>
-    <link>http://localhost:1313/tags/psychology/</link>
+    <link>http://localhost:59898/tags/psychology/</link>
     <description>Recent content in Psychology on My Zen Garden</description>
     <generator>Hugo -- 0.147.4</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 12 Feb 2026 20:57:14 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/psychology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Mar 2026 10:01:13 +0800</lastBuildDate>
+    <atom:link href="http://localhost:59898/tags/psychology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>蜂巢悖论 02</title>
+      <link>http://localhost:59898/posts/2026/03/%E8%9C%82%E5%B7%A2%E6%82%96%E8%AE%BA-02/</link>
+      <pubDate>Wed, 04 Mar 2026 10:01:13 +0800</pubDate>
+      <guid>http://localhost:59898/posts/2026/03/%E8%9C%82%E5%B7%A2%E6%82%96%E8%AE%BA-02/</guid>
+      <description>镣铐并非为了束缚，而是为了让她在托举王冠时，听见自己骨骼的铮鸣</description>
+    </item>
     <item>
       <title>蜂巢悖论 01</title>
-      <link>http://localhost:1313/posts/2026/02/%E8%9C%82%E5%B7%A2%E6%82%96%E8%AE%BA-01/</link>
+      <link>http://localhost:59898/posts/2026/02/%E8%9C%82%E5%B7%A2%E6%82%96%E8%AE%BA-01/</link>
       <pubDate>Thu, 12 Feb 2026 20:57:14 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/%E8%9C%82%E5%B7%A2%E6%82%96%E8%AE%BA-01/</guid>
+      <guid>http://localhost:59898/posts/2026/02/%E8%9C%82%E5%B7%A2%E6%82%96%E8%AE%BA-01/</guid>
       <description>全书以维维安在狱中创作的绘本《蜂巢悖论》作为章节插画，最后一页画着无数戴镣铐的蜜蜂托起金色王冠，署名处写着：“囚徒V.H，于规训与惩罚的缝隙”</description>
     </item>
     <item>
       <title>夫人 08</title>
-      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-08/</link>
+      <link>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-08/</link>
       <pubDate>Thu, 12 Feb 2026 20:51:47 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-08/</guid>
+      <guid>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-08/</guid>
       <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
     </item>
     <item>
       <title>夫人 07</title>
-      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-07/</link>
+      <link>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-07/</link>
       <pubDate>Thu, 12 Feb 2026 20:51:42 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-07/</guid>
+      <guid>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-07/</guid>
       <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
     </item>
     <item>
       <title>夫人 06</title>
-      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-06/</link>
+      <link>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-06/</link>
       <pubDate>Thu, 12 Feb 2026 20:00:44 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-06/</guid>
+      <guid>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-06/</guid>
       <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
     </item>
     <item>
       <title>夫人 05</title>
-      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-05/</link>
+      <link>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-05/</link>
       <pubDate>Thu, 12 Feb 2026 20:00:33 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-05/</guid>
+      <guid>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-05/</guid>
       <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
     </item>
     <item>
       <title>夫人 04</title>
-      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-04/</link>
+      <link>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-04/</link>
       <pubDate>Thu, 12 Feb 2026 20:00:27 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-04/</guid>
+      <guid>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-04/</guid>
       <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
     </item>
     <item>
       <title>夫人 03</title>
-      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-03/</link>
+      <link>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-03/</link>
       <pubDate>Thu, 12 Feb 2026 19:46:56 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-03/</guid>
+      <guid>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-03/</guid>
       <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
     </item>
     <item>
       <title>夫人 02</title>
-      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-02/</link>
+      <link>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-02/</link>
       <pubDate>Tue, 10 Feb 2026 18:23:40 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA-02/</guid>
+      <guid>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA-02/</guid>
       <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
     </item>
     <item>
       <title>夫人</title>
-      <link>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA/</link>
+      <link>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA/</link>
       <pubDate>Tue, 10 Feb 2026 09:57:13 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/%E5%A4%AB%E4%BA%BA/</guid>
+      <guid>http://localhost:59898/posts/2026/02/%E5%A4%AB%E4%BA%BA/</guid>
       <description>天才在左，疯子在右，精神病院版肖申克的救赎</description>
     </item>
   </channel>

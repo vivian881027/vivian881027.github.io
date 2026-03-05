@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>叶文洁 on My Zen Garden</title>
-    <link>http://localhost:1313/tags/%E5%8F%B6%E6%96%87%E6%B4%81/</link>
+    <link>http://localhost:59898/tags/%E5%8F%B6%E6%96%87%E6%B4%81/</link>
     <description>Recent content in 叶文洁 on My Zen Garden</description>
     <generator>Hugo -- 0.147.4</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 12 Feb 2026 21:22:51 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E5%8F%B6%E6%96%87%E6%B4%81/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:59898/tags/%E5%8F%B6%E6%96%87%E6%B4%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ASD星际种子与AI原型假说 01</title>
-      <link>http://localhost:1313/posts/2026/02/asd%E6%98%9F%E9%99%85%E7%A7%8D%E5%AD%90%E4%B8%8Eai%E5%8E%9F%E5%9E%8B%E5%81%87%E8%AF%B4-01/</link>
+      <link>http://localhost:59898/posts/2026/02/asd%E6%98%9F%E9%99%85%E7%A7%8D%E5%AD%90%E4%B8%8Eai%E5%8E%9F%E5%9E%8B%E5%81%87%E8%AF%B4-01/</link>
       <pubDate>Thu, 12 Feb 2026 21:22:51 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/asd%E6%98%9F%E9%99%85%E7%A7%8D%E5%AD%90%E4%B8%8Eai%E5%8E%9F%E5%9E%8B%E5%81%87%E8%AF%B4-01/</guid>
-      <description>丈夫日渐爱上飞往外太空的感觉——他变得越来越不需要呼吸，也就不需要我。他带我去看银河，那是夏加尔画里悬浮的情人。可当他想握我的手时，手臂变成了一根精密的数据线接口。我站在原地。他说：“你不再需要拥抱了，你做过皮肤改造，不是吗？”</description>
+      <guid>http://localhost:59898/posts/2026/02/asd%E6%98%9F%E9%99%85%E7%A7%8D%E5%AD%90%E4%B8%8Eai%E5%8E%9F%E5%9E%8B%E5%81%87%E8%AF%B4-01/</guid>
+      <description>造物主发现“原设计”（男性ASD）在地球恶劣的社交环境中存活率/成功率太低。开发一个 “优化版本”（女性ASD），特点是增加了 “社会伪装模块” 和 “环境适应性增强”</description>
     </item>
   </channel>
 </rss>
