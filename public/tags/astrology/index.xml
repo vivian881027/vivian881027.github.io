@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Astrology on My Zen Garden</title>
-    <link>http://localhost:59898/tags/astrology/</link>
+    <link>http://localhost:51020/tags/astrology/</link>
     <description>Recent content in Astrology on My Zen Garden</description>
     <generator>Hugo -- 0.147.4</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 05 Mar 2026 16:31:58 +0800</lastBuildDate>
-    <atom:link href="http://localhost:59898/tags/astrology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51020/tags/astrology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>双子座</title>
-      <link>http://localhost:59898/posts/2026/%E5%86%85%E5%9C%A8%E7%9A%84%E5%A4%A9%E7%A9%BA/%E5%8F%8C%E5%AD%90%E5%BA%A7/</link>
+      <link>http://localhost:51020/posts/2026/%E5%86%85%E5%9C%A8%E7%9A%84%E5%A4%A9%E7%A9%BA/%E5%8F%8C%E5%AD%90%E5%BA%A7/</link>
       <pubDate>Thu, 05 Mar 2026 16:31:58 +0800</pubDate>
-      <guid>http://localhost:59898/posts/2026/%E5%86%85%E5%9C%A8%E7%9A%84%E5%A4%A9%E7%A9%BA/%E5%8F%8C%E5%AD%90%E5%BA%A7/</guid>
+      <guid>http://localhost:51020/posts/2026/%E5%86%85%E5%9C%A8%E7%9A%84%E5%A4%A9%E7%A9%BA/%E5%8F%8C%E5%AD%90%E5%BA%A7/</guid>
       <description>一个炸弹在拼图工厂爆炸了。一千个拼图被炸成了一百万个碎片，散落在地如纸屑一般。两个疯狂的天才准备攻克这个难题。两人都保证在第二天天亮前将五百个拼图拼装好。</description>
     </item>
     <item>
       <title>金牛座</title>
-      <link>http://localhost:59898/posts/2026/%E5%86%85%E5%9C%A8%E7%9A%84%E5%A4%A9%E7%A9%BA/%E9%87%91%E7%89%9B%E5%BA%A7/</link>
+      <link>http://localhost:51020/posts/2026/%E5%86%85%E5%9C%A8%E7%9A%84%E5%A4%A9%E7%A9%BA/%E9%87%91%E7%89%9B%E5%BA%A7/</link>
       <pubDate>Thu, 05 Mar 2026 14:26:40 +0800</pubDate>
-      <guid>http://localhost:59898/posts/2026/%E5%86%85%E5%9C%A8%E7%9A%84%E5%A4%A9%E7%A9%BA/%E9%87%91%E7%89%9B%E5%BA%A7/</guid>
+      <guid>http://localhost:51020/posts/2026/%E5%86%85%E5%9C%A8%E7%9A%84%E5%A4%A9%E7%A9%BA/%E9%87%91%E7%89%9B%E5%BA%A7/</guid>
       <description>语言不再必要。在那广阔的内在空间里，你的感受是什么？肥沃的土地在教给我们什么？永恒。安详。宁静。如何变得无限复杂但是依旧简单。如何变得不可探测的深刻然而不需要去谈论它。</description>
     </item>
   </channel>

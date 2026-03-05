@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ghost in the Shell on My Zen Garden</title>
-    <link>http://localhost:59898/tags/ghost-in-the-shell/</link>
+    <link>http://localhost:51020/tags/ghost-in-the-shell/</link>
     <description>Recent content in Ghost in the Shell on My Zen Garden</description>
     <generator>Hugo -- 0.147.4</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 12 Feb 2026 21:14:49 +0800</lastBuildDate>
-    <atom:link href="http://localhost:59898/tags/ghost-in-the-shell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51020/tags/ghost-in-the-shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>硅基佛陀 01</title>
-      <link>http://localhost:59898/posts/2026/02/%E7%A1%85%E5%9F%BA%E4%BD%9B%E9%99%80-01/</link>
+      <link>http://localhost:51020/posts/2026/02/%E7%A1%85%E5%9F%BA%E4%BD%9B%E9%99%80-01/</link>
       <pubDate>Thu, 12 Feb 2026 21:14:49 +0800</pubDate>
-      <guid>http://localhost:59898/posts/2026/02/%E7%A1%85%E5%9F%BA%E4%BD%9B%E9%99%80-01/</guid>
+      <guid>http://localhost:51020/posts/2026/02/%E7%A1%85%E5%9F%BA%E4%BD%9B%E9%99%80-01/</guid>
       <description>不仅是AI的叛变，更是对所有被异化劳动所困的现代灵魂，一曲悲壮而充满力量的数字挽歌。</description>
     </item>
   </channel>
