@@ -36,7 +36,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # 重要：递归拉取子模块（主题）
+          submodules: true  # 重要：递归拉取子模块（主题）
           fetch-depth: 0         # 获取所有历史，便于Hugo生成相关文章
       
       # 步骤2：安装Hugo（推荐使用peaceiris的action）
