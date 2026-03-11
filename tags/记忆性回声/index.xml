@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>记忆性回声 on My Zen Garden</title>
+    <link>http://localhost:1313/tags/%E8%AE%B0%E5%BF%86%E6%80%A7%E5%9B%9E%E5%A3%B0/</link>
+    <description>Recent content in 记忆性回声 on My Zen Garden</description>
+    <generator>Hugo -- 0.147.4</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 05 Mar 2026 10:30:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E8%AE%B0%E5%BF%86%E6%80%A7%E5%9B%9E%E5%A3%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>回声 01</title>
+      <link>http://localhost:1313/posts/2026/03/%E5%9B%9E%E5%A3%B0-01/</link>
+      <pubDate>Thu, 05 Mar 2026 10:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/03/%E5%9B%9E%E5%A3%B0-01/</guid>
+      <description>&lt;h1 id=&#34;回声三幕剧剧本框架&#34;&gt;《回声》三幕剧剧本框架&lt;/h1&gt;
+&lt;h2 id=&#34;第一幕声音的诞生&#34;&gt;第一幕：声音的诞生&lt;/h2&gt;
+&lt;h3 id=&#34;场景一&#34;&gt;场景一&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;地点&lt;/strong&gt;：声学研究所实验室
+&lt;strong&gt;时间&lt;/strong&gt;：一个普通的周二下午
+&lt;strong&gt;人物&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;苏音（35岁）：声学研究专家，专注回声研究&lt;/li&gt;
+&lt;li&gt;林教授（60岁）：苏音的导师，即将退休&lt;/li&gt;
+&lt;li&gt;陈风（32岁）：软件开发工程师，苏音的同事兼朋友&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;情节&lt;/strong&gt;：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
