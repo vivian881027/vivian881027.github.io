@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>小活佛 on My Zen Garden</title>
-    <link>https://vivian881027.github.io/tags/%E5%B0%8F%E6%B4%BB%E4%BD%9B/</link>
+    <link>http://localhost:1313/tags/%E5%B0%8F%E6%B4%BB%E4%BD%9B/</link>
     <description>Recent content in 小活佛 on My Zen Garden</description>
-    <generator>Hugo -- 0.147.4</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 05 Mar 2026 09:18:47 +0800</lastBuildDate>
-    <atom:link href="https://vivian881027.github.io/tags/%E5%B0%8F%E6%B4%BB%E4%BD%9B/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%B0%8F%E6%B4%BB%E4%BD%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>护送 01</title>
-      <link>https://vivian881027.github.io/posts/2026/03/%E6%8A%A4%E9%80%81-01/</link>
+      <link>http://localhost:1313/posts/2026/03/%E6%8A%A4%E9%80%81-01/</link>
       <pubDate>Thu, 05 Mar 2026 09:18:47 +0800</pubDate>
-      <guid>https://vivian881027.github.io/posts/2026/03/%E6%8A%A4%E9%80%81-01/</guid>
+      <guid>http://localhost:1313/posts/2026/03/%E6%8A%A4%E9%80%81-01/</guid>
       <description>当所有人在争夺“标准”的解释权时，真正值得护送的，是那些还在用自己的眼睛看世界的人。</description>
     </item>
   </channel>

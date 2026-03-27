@@ -1,0 +1,9 @@
+.post-views {
+  margin-left: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.post-views i {
+  margin-right: 4px;
+}

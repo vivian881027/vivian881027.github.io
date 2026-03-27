@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>道成肉身 on My Zen Garden</title>
+    <link>http://localhost:1313/tags/%E9%81%93%E6%88%90%E8%82%89%E8%BA%AB/</link>
+    <description>Recent content in 道成肉身 on My Zen Garden</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 05 Mar 2026 11:45:28 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E9%81%93%E6%88%90%E8%82%89%E8%BA%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《卡拉马佐夫兄弟》自由的两难</title>
+      <link>http://localhost:1313/posts/2026/03/%E5%8D%A1%E6%8B%89%E9%A9%AC%E4%BD%90%E5%A4%AB%E5%85%84%E5%BC%9F%E8%87%AA%E7%94%B1%E7%9A%84%E4%B8%A4%E9%9A%BE/</link>
+      <pubDate>Thu, 05 Mar 2026 11:45:28 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/03/%E5%8D%A1%E6%8B%89%E9%A9%AC%E4%BD%90%E5%A4%AB%E5%85%84%E5%BC%9F%E8%87%AA%E7%94%B1%E7%9A%84%E4%B8%A4%E9%9A%BE/</guid>
+      <description>阿辽沙的“犯罪”不是为了“达成善的目的”，而是他在一个罪恶已然存在的世界里，履行“积极的爱”所必须承担的悲剧性后果。</description>
+    </item>
+  </channel>
+</rss>

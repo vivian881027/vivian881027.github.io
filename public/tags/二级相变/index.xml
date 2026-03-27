@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>二级相变 on My Zen Garden</title>
+    <link>http://localhost:1313/tags/%E4%BA%8C%E7%BA%A7%E7%9B%B8%E5%8F%98/</link>
+    <description>Recent content in 二级相变 on My Zen Garden</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Mar 2026 10:57:15 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E4%BA%8C%E7%BA%A7%E7%9B%B8%E5%8F%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>二级相变与重整化群 01</title>
+      <link>http://localhost:1313/posts/2026/03/%E4%BA%8C%E7%BA%A7%E7%9B%B8%E5%8F%98%E4%B8%8E%E9%87%8D%E6%95%B4%E5%8C%96%E7%BE%A4-01/</link>
+      <pubDate>Thu, 19 Mar 2026 10:57:15 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/03/%E4%BA%8C%E7%BA%A7%E7%9B%B8%E5%8F%98%E4%B8%8E%E9%87%8D%E6%95%B4%E5%8C%96%E7%BE%A4-01/</guid>
+      <description>二级相变就像一个社会处于革命的临界状态。尺度不变性意味着在这个状态下，从街头小团体到全国性组织，所有层面的社会结构都处于相似的不稳定和活跃状态，没有哪个层面能主导局面。重整化群就是社会学家研究这个现象的方法：他先把每个街区的动向总结成一个“块报告”，然后把这些块报告再汇总成区域报告…… 通过研究这一系列“摘要”过程的规律，他发现当社会处于临界状态时，无论怎样摘要，报告所反映的社会紧张程度都是相同的（不动点）。这个方法让他能够预测革命是否会爆发，以及爆发的规模有多大。</description>
+    </item>
+  </channel>
+</rss>

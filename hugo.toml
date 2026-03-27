@@ -117,4 +117,3 @@ hasCJKLanguage = true
     baseName = "index"
     isPlain = true
     mediaType = "application/json"
-

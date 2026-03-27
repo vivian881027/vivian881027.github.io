@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>余烬的肖像 on My Zen Garden</title>
+    <link>http://localhost:1313/tags/%E4%BD%99%E7%83%AC%E7%9A%84%E8%82%96%E5%83%8F/</link>
+    <description>Recent content in 余烬的肖像 on My Zen Garden</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 05 Mar 2026 10:28:49 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E4%BD%99%E7%83%AC%E7%9A%84%E8%82%96%E5%83%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>余烬的肖像 01</title>
+      <link>http://localhost:1313/posts/2026/03/%E4%BD%99%E7%83%AC%E7%9A%84%E8%82%96%E5%83%8F-01/</link>
+      <pubDate>Thu, 05 Mar 2026 10:28:49 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/03/%E4%BD%99%E7%83%AC%E7%9A%84%E8%82%96%E5%83%8F-01/</guid>
+      <description>一场美术馆中的神秘画作失窃案，牵出三位证人各自被时代掩盖的创伤记忆，当记忆的余烬被重新点燃，他们必须在真实与虚构的镜像之间，寻回被偷走的不仅是艺术品，更是直面自我的勇气。</description>
+    </item>
+  </channel>
+</rss>

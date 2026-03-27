@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>乱世佳人 on My Zen Garden</title>
+    <link>http://localhost:1313/tags/%E4%B9%B1%E4%B8%96%E4%BD%B3%E4%BA%BA/</link>
+    <description>Recent content in 乱世佳人 on My Zen Garden</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Mar 2026 10:40:49 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E4%B9%B1%E4%B8%96%E4%BD%B3%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>居住空间的心理需求 01</title>
+      <link>http://localhost:1313/posts/2026/03/%E5%B1%85%E4%BD%8F%E7%A9%BA%E9%97%B4%E7%9A%84%E5%BF%83%E7%90%86%E9%9C%80%E6%B1%82-01/</link>
+      <pubDate>Sat, 21 Mar 2026 10:40:49 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/03/%E5%B1%85%E4%BD%8F%E7%A9%BA%E9%97%B4%E7%9A%84%E5%BF%83%E7%90%86%E9%9C%80%E6%B1%82-01/</guid>
+      <description>真正的安全感，不来自固守某个堡垒，而来自知道无论外界如何变化，你都有能力重新构建适合自己的生存空间。</description>
+    </item>
+  </channel>
+</rss>

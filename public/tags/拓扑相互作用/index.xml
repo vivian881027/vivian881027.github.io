@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>拓扑相互作用 on My Zen Garden</title>
+    <link>http://localhost:1313/tags/%E6%8B%93%E6%89%91%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8/</link>
+    <description>Recent content in 拓扑相互作用 on My Zen Garden</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Mar 2026 11:27:35 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%8B%93%E6%89%91%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>鸟群的社交网络 01</title>
+      <link>http://localhost:1313/posts/2026/03/%E9%B8%9F%E7%BE%A4%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C-01/</link>
+      <pubDate>Wed, 18 Mar 2026 11:27:35 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/03/%E9%B8%9F%E7%BE%A4%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C-01/</guid>
+      <description>鸟群中个体之间的相互作用规则是基于拓扑/相对距离（即按距离排序选择固定数量的邻居），而不是基于绝对距离，这解释了为什么不同密度的群体表现出相同的各向异性特征。</description>
+    </item>
+  </channel>
+</rss>

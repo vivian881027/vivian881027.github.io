@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>大数定律 on My Zen Garden</title>
+    <link>http://localhost:1313/tags/%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B/</link>
+    <description>Recent content in 大数定律 on My Zen Garden</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Mar 2026 11:07:54 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>混沌系统与佛学 01</title>
+      <link>http://localhost:1313/posts/2026/03/%E6%B7%B7%E6%B2%8C%E7%B3%BB%E7%BB%9F%E4%B8%8E%E4%BD%9B%E5%AD%A6-01/</link>
+      <pubDate>Wed, 18 Mar 2026 11:07:54 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/03/%E6%B7%B7%E6%B2%8C%E7%B3%BB%E7%BB%9F%E4%B8%8E%E4%BD%9B%E5%AD%A6-01/</guid>
+      <description>如梦幻泡影，如露亦如电，应作如是观</description>
+    </item>
+  </channel>
+</rss>
