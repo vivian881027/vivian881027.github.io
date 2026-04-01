@@ -4,18 +4,19 @@ draft = false
 title = 'About'
 +++
 
+## 欢迎来到我的个人博客My Paprika Inn
+
 A Daydreamer Who Loves Psychology：Paprika Astro Workshop
 
-{{< figure 
-    src="/images/Weixin_Account.png"
-    title="个人微信"
-    caption="占星师红辣椒Paprika"
-    alt="占星师红辣椒Paprika"
->}}
+### 我的社交媒体
 
-{{< figure 
-    src="/images/Official_Account_QRcode.jpg"
-    title="微信公众号"
-    caption="红辣椒占星工坊 Paprika Astro Workshop"
-    alt="红辣椒占星工坊 Paprika Astro Workshop"
->}}
+<div style="display: flex; gap: 30px; justify-content: center; margin: 30px 0;">
+  <div style="text-align: center;">
+    <img src="/images/Weixin_Account.png" alt="微信" style="width: 250px; border-radius: 10px;">
+    <p><strong>个人微信：占星师红辣椒Paprika</strong></p>
+  </div>
+  <div style="text-align: center;">
+    <img src="/images/Official_Account_QRcode.jpg" alt="公众号" style="width: 250px; border-radius: 10px;">
+    <p><strong>微信公众号：红辣椒占星工坊 Paprika Astro Workshop</strong></p>
+  </div>
+</div>
