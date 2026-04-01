@@ -7,7 +7,7 @@ title = 'About'
 A Daydreamer Who Loves Psychology：Paprika Astro Workshop
 
 {{< figure 
-    src="/images/Weixin_Account.jpg"
+    src="/images/Weixin_Account.png"
     title="个人微信"
     caption="占星师红辣椒Paprika"
     alt="占星师红辣椒Paprika"
