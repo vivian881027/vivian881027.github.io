@@ -8,21 +8,16 @@ A Daydreamer Who Loves Psychology：**Paprika Astro Workshop**
 
 ### 联系方式
 
-<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-    <div>
-        {{< figure 
-            src="/images/Weixin_Account.png"
-            title="个人微信"
-            caption="Astrologer Paprika"
-            alt="个人微信"
-        >}}
-    </div>
-    <div>
-        {{< figure 
-            src="/images/Official_Account_QRcode.jpg"
-            title="微信公众号：红辣椒占星工坊"
-            caption="Paprika Astro Workshop"
-            alt="微信公众号：红辣椒占星工坊"
-        >}}
-    </div>
-</div>
+{{< figure 
+    src="/images/Weixin.png"
+    title="个人微信"
+    caption="Astrologer Paprika"
+    alt="个人微信"
+>}}
+
+{{< figure 
+    src="/images/Official_Account_QRcode.jpg"
+    title="微信公众号：红辣椒占星工坊"
+    caption="Paprika Astro Workshop"
+    alt="微信公众号：红辣椒占星工坊"
+>}}
