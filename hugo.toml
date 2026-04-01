@@ -1,7 +1,7 @@
 baseURL = 'https://paprikainn.com'
 languageCode = 'zh-cn'
 defaultContentLanguage = "zh"
-title = 'My Zen Garden'
+title = 'My Paprika Inn'
 theme = "PaperMod"
 enableEmoji = true
 hasCJKLanguage = true
@@ -12,7 +12,7 @@ hasCJKLanguage = true
 [params]
 
   # 主页信息
-  homeInfoParams = { Title = "Welcome to My Zen Garden", Content = "三日打鱼：这是我的个人博客，记录学习和生活思考" }
+  homeInfoParams = { Title = "Welcome to My Paprika Inn", Content = "三日打鱼：这是我的个人博客，记录学习、工作和生活思考，专注疗愈、陪伴和成长。" }
   
   # 主题模式
   defaultTheme = "auto"  # light, dark, auto
