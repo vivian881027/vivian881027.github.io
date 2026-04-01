@@ -6,9 +6,21 @@ title = 'About'
 
 A Daydreamer Who Loves Psychology：Paprika Astro Workshop
 
-### 我的社交媒体和公众号
+### 联系方式
 
-<div style="display: flex; gap: 20px; margin: 20px 0;">
-  <img src="/images/Weixin_Account.png" alt="微信" style="width: 100%; max-width: 300px; height: auto;">
-  <img src="/images/Official_Account_QRcode.jpg" alt="公众号" style="width: 100%; max-width: 300px; height: auto;">
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+{{< figure 
+    src="/images/Weixin_Account.png"
+    title="个人微信：红辣椒Paprika"
+    caption="Paprika Astro Workshop"
+    alt="个人微信：红辣椒Paprika"
+>}}
+
+{{< figure 
+    src="/images/Official_Account_QRcode.jpg"
+    title="微信公众号：红辣椒占星工坊Paprika Astro Workshop"
+    caption="Paprika Astro Workshop"
+    alt="微信公众号：红辣椒占星工坊Paprika Astro Workshop"
+>}}
+
 </div>
