@@ -4,20 +4,13 @@ draft = false
 title = 'About'
 +++
 
-A Daydreamer Who Loves Psychology：**Paprika Astro Workshop** 
+A Daydreamer Who Loves Psychology：**Paprika Inn** 
 
 ### 联系方式
 
 {{< figure 
-    src="/images/Weixin.png"
-    title="个人微信"
-    caption="Astrologer Paprika"
-    alt="个人微信"
->}}
-
-{{< figure 
     src="/images/Official_Account_QRcode.jpg"
-    title="微信公众号：红辣椒占星工坊"
+    title="微信公众号：Paprika Inn"
     caption="Paprika Astro Workshop"
-    alt="微信公众号：红辣椒占星工坊"
+    alt="微信公众号：Paprika Inn"
 >}}
