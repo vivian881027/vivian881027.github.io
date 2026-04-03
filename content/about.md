@@ -11,6 +11,6 @@ A Daydreamer Who Loves Psychology：**Paprika Inn**
 {{< figure 
     src="/images/Official_Account_QRcode.jpg"
     title="微信公众号：Paprika Inn"
-    caption="Paprika Astro Workshop"
+    caption="Paprika Inn 红辣椒驿站"
     alt="微信公众号：Paprika Inn"
 >}}
