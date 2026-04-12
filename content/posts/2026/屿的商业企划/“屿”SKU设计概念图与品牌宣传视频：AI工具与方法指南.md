@@ -3,7 +3,7 @@ date = '2026-04-12T14:00:59+08:00'
 draft = false
 title = '“屿”SKU设计概念图与品牌宣传视频：AI工具与方法指南'
 tags = ["屿"]
-categories = ["奥赛罗拾光"]
+categories = ["奥德赛拾光"]
 summary = "日常生活中的一座孤岛，5分钟的绝对自我时刻。" 
 +++
 
