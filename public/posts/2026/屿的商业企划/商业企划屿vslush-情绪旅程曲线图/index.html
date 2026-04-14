@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>【商业企划】屿vsLush 情绪旅程曲线图 | My Paprika Inn</title>
+<title>【商业企划】屿 vs Lush 情绪旅程曲线图 | My Paprika Inn</title>
 <meta name="keywords" content="屿">
 <meta name="description" content="日常生活中的一座孤岛，5分钟的绝对自我时刻。">
 <meta name="author" content="">
@@ -140,29 +140,21 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      【商业企划】屿vsLush 情绪旅程曲线图
+      【商业企划】屿 vs Lush 情绪旅程曲线图
     </h1>
     <div class="post-meta"><span title='2026-04-11 18:03:43 +0800 CST'>2026年4月11日</span>&nbsp;·&nbsp;<span>1 分钟</span>
 
 </div>
   </header> 
-  <div class="post-content"><h2 id="画出可交互的情绪曲线图htmljs版本可嵌入ppt">画出可交互的情绪曲线图（HTML/JS版本，可嵌入PPT）<a hidden class="anchor" aria-hidden="true" href="#画出可交互的情绪曲线图htmljs版本可嵌入ppt">#</a></h2>
-<figure>
-    <img loading="lazy" src="/images/posts/2026/04/%e2%80%9c%e5%b1%bf%e2%80%9d%e7%9a%84%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be/%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be%e5%af%b9%e6%af%94.png"/> <figcaption>
-            情绪旅程曲线图对比：屿 vs Lush
-        </figcaption>
-</figure>
-
-<p>以下是“屿 vs Lush”可交互情绪曲线图的完整HTML代码。它是一个独立的网页文件，可直接在浏览器中运行，也支持嵌入PPT（Windows版可通过Web Browser控件加载）。</p>
-<!DOCTYPE html>
+  <div class="post-content"><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>屿 vs Lush - 情绪旅程曲线图 | 交互式体验设计</title>
-    <!-- 引入 Chart.js 轻量图表库 -->
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <!-- 引入 Font Awesome 6 (免费图标库) -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -170,271 +162,262 @@
             padding: 0;
             box-sizing: border-box;
         }
-<pre><code>    body {
-        background: linear-gradient(145deg, #f2efe9 0%, #e8e2d8 100%);
-        font-family: 'Inter', 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        padding: 2rem;
-    }
 
-    /* 主卡片风格：侘寂 / 极简 */
-    .chart-container {
-        max-width: 1300px;
-        width: 100%;
-        background: #fefaf5;
-        border-radius: 2rem;
-        box-shadow: 0 20px 35px -12px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.05);
-        overflow: hidden;
-        transition: all 0.2s ease;
-    }
+         
 
-    /* 头部品牌区 */
-    .hero {
-        padding: 2rem 2.5rem 1rem 2.5rem;
-        border-bottom: 1px solid #e2d9cf;
-    }
-
-    .brand-badge {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .title-section h1 {
-        font-size: 1.9rem;
-        font-weight: 500;
-        letter-spacing: -0.3px;
-        color: #2c2a27;
-        margin-bottom: 0.4rem;
-    }
-
-    .title-section h1 i {
-        color: #b87c4f;
-        font-size: 1.8rem;
-        margin-right: 8px;
-    }
-
-    .sub {
-        color: #7f6e5d;
-        font-size: 0.9rem;
-        font-weight: 400;
-        border-left: 3px solid #c2a383;
-        padding-left: 12px;
-        margin-top: 6px;
-    }
-
-    .legend-buttons {
-        display: flex;
-        gap: 2rem;
-        background: #f4efe8;
-        padding: 0.5rem 1.2rem;
-        border-radius: 60px;
-    }
-
-    .legend-lush {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-weight: 500;
-        color: #cf6f4a;
-    }
-
-    .legend-yu {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-weight: 500;
-        color: #5b7b6e;
-    }
-
-    .dot-lush {
-        width: 20px;
-        height: 20px;
-        background: #e58c6a;
-        border-radius: 20px;
-        box-shadow: 0 0 0 2px #fbe9e2;
-    }
-
-    .dot-yu {
-        width: 20px;
-        height: 20px;
-        background: #6e9f8c;
-        border-radius: 20px;
-        box-shadow: 0 0 0 2px #e0f0ea;
-    }
-
-    /* 图表区域 */
-    .graph-wrapper {
-        padding: 1.5rem 2rem 0.5rem 2rem;
-        position: relative;
-    }
-
-    canvas {
-        max-height: 460px;
-        width: 100%;
-        cursor: pointer;
-    }
-
-    /* 控制栏：交互提示与重置 */
-    .interaction-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.5rem 2rem 0 2rem;
-        flex-wrap: wrap;
-    }
-
-    .tooltip-hint {
-        background: #e9e1d7;
-        border-radius: 30px;
-        padding: 6px 14px;
-        font-size: 0.75rem;
-        color: #5f5346;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .tooltip-hint i {
-        font-size: 0.8rem;
-    }
-
-    .reset-btn {
-        background: none;
-        border: 1px solid #cfc3b6;
-        padding: 5px 14px;
-        border-radius: 30px;
-        font-size: 0.75rem;
-        color: #8b765e;
-        cursor: pointer;
-        transition: all 0.2s;
-        font-weight: 500;
-    }
-
-    .reset-btn:hover {
-        background: #e3d9ce;
-        border-color: #b2947a;
-        color: #4f3e2e;
-    }
-
-    /* 阶段解释卡 (动态高亮) */
-    .stages-panel {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 0.8rem;
-        padding: 1.5rem 2rem 2rem 2rem;
-        border-top: 1px solid #e9e0d6;
-        margin-top: 0.5rem;
-    }
-
-    .stage-card {
-        flex: 1;
-        min-width: 100px;
-        background: #fefaf5;
-        border-radius: 1.2rem;
-        padding: 0.8rem 0.6rem;
-        text-align: center;
-        transition: all 0.2s ease;
-        border: 1px solid #ede3d8;
-        cursor: default;
-    }
-
-    .stage-card.active {
-        background: #f6efe8;
-        border-left: 4px solid #b87c4f;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.02);
-        transform: translateY(-2px);
-    }
-
-    .stage-name {
-        font-weight: 600;
-        font-size: 0.85rem;
-        letter-spacing: 0.3px;
-        color: #4b3f33;
-    }
-
-    .stage-values {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-top: 8px;
-        font-size: 0.7rem;
-        font-weight: 500;
-    }
-
-    .lush-val {
-        color: #cf6f4a;
-    }
-
-    .yu-val {
-        color: #5b7b6e;
-    }
-
-    .insight {
-        font-size: 0.7rem;
-        margin-top: 8px;
-        color: #8f7b66;
-        border-top: 1px dashed #e2cfbd;
-        padding-top: 6px;
-    }
-
-    /* 底部金句 */
-    .quote-footer {
-        background: #f3ede6;
-        padding: 1rem 2rem;
-        text-align: center;
-        font-size: 0.85rem;
-        font-style: italic;
-        color: #4e4238;
-        border-top: 1px solid #e4d9ce;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
-
-    .quote-item {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-
-    hr {
-        margin: 0 2rem;
-        border-color: #e7dfd5;
-    }
-
-    @media (max-width: 780px) {
-        body {
-            padding: 1rem;
+         
+        .chart-container {
+            max-width: 1300px;
+            width: 100%;
+            background: #fefaf5;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: all 0.2s ease;
         }
+
+         
         .hero {
-            padding: 1.2rem;
+            padding: 2rem 2.5rem 1rem 2.5rem;
+            border-bottom: 1px solid #e2d9cf;
         }
-        .graph-wrapper {
-            padding: 1rem;
+
+        .brand-badge {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
-        .stages-panel {
-            padding: 1rem;
+
+        .title-section h1 {
+            font-size: 1.9rem;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            color: #2c2a27;
+            margin-bottom: 0.4rem;
         }
-        .stage-values {
-            flex-direction: column;
-            gap: 0.3rem;
+
+        .title-section h1 i {
+            color: #b87c4f;
+            font-size: 1.8rem;
+            margin-right: 8px;
         }
+
+        .sub {
+            color: #7f6e5d;
+            font-size: 0.9rem;
+            font-weight: 400;
+            border-left: 3px solid #c2a383;
+            padding-left: 12px;
+            margin-top: 6px;
+        }
+
         .legend-buttons {
-            margin-top: 0.8rem;
+            display: flex;
+            gap: 2rem;
+            background: #f4efe8;
+            padding: 0.5rem 1.2rem;
+            border-radius: 60px;
         }
-    }
-&lt;/style&gt;
-</code></pre>
+
+        .legend-lush {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            color: #cf6f4a;
+        }
+
+        .legend-yu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            color: #5b7b6e;
+        }
+
+        .dot-lush {
+            width: 20px;
+            height: 20px;
+            background: #e58c6a;
+            border-radius: 20px;
+            box-shadow: 0 0 0 2px #fbe9e2;
+        }
+
+        .dot-yu {
+            width: 20px;
+            height: 20px;
+            background: #6e9f8c;
+            border-radius: 20px;
+            box-shadow: 0 0 0 2px #e0f0ea;
+        }
+
+         
+        .graph-wrapper {
+            padding: 1.5rem 2rem 0.5rem 2rem;
+            position: relative;
+        }
+
+        canvas {
+            max-height: 460px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+         
+        .interaction-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem 0 2rem;
+            flex-wrap: wrap;
+        }
+
+        .tooltip-hint {
+            background: #e9e1d7;
+            border-radius: 30px;
+            padding: 6px 14px;
+            font-size: 0.75rem;
+            color: #5f5346;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tooltip-hint i {
+            font-size: 0.8rem;
+        }
+
+        .reset-btn {
+            background: none;
+            border: 1px solid #cfc3b6;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            color: #8b765e;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .reset-btn:hover {
+            background: #e3d9ce;
+            border-color: #b2947a;
+            color: #4f3e2e;
+        }
+
+         
+        .stages-panel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.8rem;
+            padding: 1.5rem 2rem 2rem 2rem;
+            border-top: 1px solid #e9e0d6;
+            margin-top: 0.5rem;
+        }
+
+        .stage-card {
+            flex: 1;
+            min-width: 100px;
+            background: #fefaf5;
+            border-radius: 1.2rem;
+            padding: 0.8rem 0.6rem;
+            text-align: center;
+            transition: all 0.2s ease;
+            border: 1px solid #ede3d8;
+            cursor: default;
+        }
+
+        .stage-card.active {
+            background: #f6efe8;
+            border-left: 4px solid #b87c4f;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+            transform: translateY(-2px);
+        }
+
+        .stage-name {
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.3px;
+            color: #4b3f33;
+        }
+
+        .stage-values {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 8px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        .lush-val {
+            color: #cf6f4a;
+        }
+
+        .yu-val {
+            color: #5b7b6e;
+        }
+
+        .insight {
+            font-size: 0.7rem;
+            margin-top: 8px;
+            color: #8f7b66;
+            border-top: 1px dashed #e2cfbd;
+            padding-top: 6px;
+        }
+
+         
+        .quote-footer {
+            background: #f3ede6;
+            padding: 1rem 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            font-style: italic;
+            color: #4e4238;
+            border-top: 1px solid #e4d9ce;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .quote-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        hr {
+            margin: 0 2rem;
+            border-color: #e7dfd5;
+        }
+
+        @media (max-width: 780px) {
+             
+            .hero {
+                padding: 1.2rem;
+            }
+            .graph-wrapper {
+                padding: 1rem;
+            }
+            .stages-panel {
+                padding: 1rem;
+            }
+            .stage-values {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            .legend-buttons {
+                margin-top: 0.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
+
 <div class="chart-container">
     <div class="hero">
         <div class="brand-badge">
@@ -448,38 +431,39 @@
             </div>
         </div>
     </div>
-<pre><code>&lt;div class=&quot;graph-wrapper&quot;&gt;
-    &lt;canvas id=&quot;emotionChart&quot; width=&quot;1000&quot; height=&quot;400&quot; style=&quot;width:100%; height:auto; max-height:450px&quot;&gt;&lt;/canvas&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;interaction-bar&quot;&gt;
-    &lt;div class=&quot;tooltip-hint&quot;&gt;&lt;i class=&quot;fas fa-hand-pointer&quot;&gt;&lt;/i&gt; 悬停或点击图表曲线 → 查看详细情绪锚点&lt;/div&gt;
-    &lt;button class=&quot;reset-btn&quot; id=&quot;resetHighlightBtn&quot;&gt;&lt;i class=&quot;fas fa-undo-alt&quot;&gt;&lt;/i&gt; 重置高亮&lt;/button&gt;
-&lt;/div&gt;
+    <div class="graph-wrapper">
+        <canvas id="emotionChart" width="1000" height="400" style="width:100%; height:auto; max-height:450px"></canvas>
+    </div>
 
-&lt;!-- 阶段卡片：动态绑定高亮 + 显示具体数值 --&gt;
-&lt;div class=&quot;stages-panel&quot; id=&quot;stagesPanel&quot;&gt;
-    &lt;!-- 动态js生成也可以，但为了清晰直接硬编码但数据绑定由js控制高亮 --&gt;
-&lt;/div&gt;
+    <div class="interaction-bar">
+        <div class="tooltip-hint"><i class="fas fa-hand-pointer"></i> 悬停或点击图表曲线 → 查看详细情绪锚点</div>
+        <button class="reset-btn" id="resetHighlightBtn"><i class="fas fa-undo-alt"></i> 重置高亮</button>
+    </div>
 
-&lt;div class=&quot;quote-footer&quot;&gt;
-    &lt;div class=&quot;quote-item&quot;&gt;&lt;i class=&quot;fas fa-candy-cane&quot; style=&quot;color:#cf6f4a;&quot;&gt;&lt;/i&gt; Lush：像糖，瞬间快乐&lt;/div&gt;
-    &lt;div class=&quot;quote-item&quot;&gt;&lt;i class=&quot;fas fa-leaf&quot; style=&quot;color:#6e9f8c;&quot;&gt;&lt;/i&gt; 屿：像茶，回甘悠长&lt;/div&gt;
-    &lt;div class=&quot;quote-item&quot;&gt;&lt;i class=&quot;fas fa-chart-line&quot;&gt;&lt;/i&gt; 多巴胺驱动追逐 · 血清素驱动归属&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+    
+    <div class="stages-panel" id="stagesPanel">
+        
+    </div>
+
+    <div class="quote-footer">
+        <div class="quote-item"><i class="fas fa-candy-cane" style="color:#cf6f4a;"></i> Lush：像糖，瞬间快乐</div>
+        <div class="quote-item"><i class="fas fa-leaf" style="color:#6e9f8c;"></i> 屿：像茶，回甘悠长</div>
+        <div class="quote-item"><i class="fas fa-chart-line"></i> 多巴胺驱动追逐 · 血清素驱动归属</div>
+    </div>
 </div>
+
 <script>
-    // 阶段定义：严格按照旅程地图 注意 -> 兴趣 -> 首次使用 -> 使用中 -> 使用后 -> 30分钟后
+    
     const stages = ["注意", "兴趣", "首次使用", "使用中", "使用后", "30分钟后"];
-    // Lush 情绪唤醒度 (1-10)
+    
     const lushScores = [9, 8, 9, 7, 5, 3];
-    // 屿 情绪唤醒度 (注意阶段低开，首次使用有4→8的变化，但图表上体现为单个数值，我们取峰值后的体验值8，使用中9，使用后7，30min后6)
-    // 为了让曲线更精准，屿的首次使用取情绪反转后的峰值感 8 (代表努力后奖励的峰值)。 注意点：10秒延迟低点（4）单独用小提示，曲线代表最终体验，符合叙事。
-    // 但我们可用 tooltip 补充细节。为呈现曲线差异，屿数值 = [5, 7, 8, 9, 7, 6]
+    
+    
+    
     const yuScores = [5, 7, 8, 9, 7, 6];
     
-    // 额外叙事映射表 (劫持点描述)
+    
     const narrativeMap = {
         "注意": { lush: "视觉炸裂 / 糖果感 → 多巴胺启动", yu: "低饱和斑驳 / 河卵石质感 → 审美好奇唤醒" },
         "兴趣": { lush: "复合花果香冲击 → 嗅觉记忆快速编码", yu: "冷杉基底香 → 侦探模式: '这个熟悉的味道是什么?'" },
@@ -489,17 +473,17 @@
         "30分钟后": { lush: "几乎无痕，情绪基线回落", yu: "偶尔闻到冷杉/海盐 → 提醒'你还在屿上'，血清素满足" }
     };
     
-    // 额外关键劫持点描述 (用于点击/悬停)
+    
     const extraInsight = {
         "首次使用": "✨ 屿的设计精髓：10秒延迟制造‘仪式感’，情绪短暂下挫后飙升至8分，形成比Lush更深的记忆烙印。",
         "使用中": "🌊 屿峰值9分：乳霜泡沫+冷杉海盐气味+视觉斑驳 → 内感受闭环彻底激活",
         "30分钟后": "🏝️ 屿仍维持6分唤醒：皮肤膜感是‘岛’的物理证据，复购由归属感驱动。"
     };
     
-    let chart; // 图表实例
+    let chart; 
     let currentActiveIndex = -1;
     
-    // 渲染阶段卡片
+    
     function renderStageCards() {
         const panel = document.getElementById("stagesPanel");
         if (!panel) return;
@@ -521,7 +505,7 @@
             card.addEventListener("click", (e) => {
                 e.stopPropagation();
                 highlightStage(idx);
-                // 同时高亮图表数据点（通过chart tooltip模拟或手动更新dataset？直接调用图表内置高亮不够直观，我们更新卡片样式并显示额外信息）
+                
                 showStageDetail(idx);
             });
             panel.appendChild(card);
@@ -538,9 +522,9 @@
         return "";
     }
     
-    // 高亮卡片
+    
     function highlightStage(index) {
-        // 重置所有卡片active样式
+        
         const cards = document.querySelectorAll(".stage-card");
         cards.forEach((card, i) => {
             if (i === index) {
@@ -550,11 +534,11 @@
             }
         });
         currentActiveIndex = index;
-        // 可选：同时触发表格tooltip模拟显示
+        
     }
     
-    // 显示更详细的信息 (使用弹窗/控制台? 优雅地展示在图表旁或者一个小浮层, 为了不侵入，采用浏览器自带alert风格太硬，改用临时tooltip浮层)
-    // 创建轻提示浮层
+    
+    
     let toastEl = null;
     function showStageDetail(index) {
         const stage = stages[index];
@@ -563,7 +547,7 @@
         let special = extraInsight[stage] || "";
         const message = `【${stage}阶段】\n🔴 Lush: ${lushDesc}\n🟢 屿: ${yuDesc}\n${special ? "✨ " + special : ""}`;
         
-        // 创建临时toast
+        
         if (toastEl) toastEl.remove();
         toastEl = document.createElement("div");
         toastEl.style.position = "fixed";
@@ -590,7 +574,7 @@
         }, 4000);
     }
     
-    // 初始化图表 (Chart.js)
+    
     function initChart() {
         const ctx = document.getElementById('emotionChart').getContext('2d');
         chart = new Chart(ctx, {
@@ -722,8 +706,8 @@
         });
     }
     
-    // 额外在图表上创建动态注释标记: 用原生方法在canvas上方加一个浮动小标记（象征10秒延迟点），由于canvas覆盖，更优雅的方式是在图表旁加标注。
-    // 我们增加一个浮动提示元素挂在graph-wrapper内
+    
+    
     function addCustomAnnotation() {
         const wrapper = document.querySelector('.graph-wrapper');
         if (!wrapper) return;
@@ -741,7 +725,7 @@
         marker.style.width = 'fit-content';
         wrapper.appendChild(marker);
         
-        // 增加一个微妙的引导
+        
         const subNote = document.createElement('div');
         subNote.style.textAlign = 'right';
         subNote.style.fontSize = '0.68rem';
@@ -751,13 +735,13 @@
         wrapper.appendChild(subNote);
     }
     
-    // 重置高亮
+    
     function resetHighlights() {
         const cards = document.querySelectorAll(".stage-card");
         cards.forEach(card => card.classList.remove("active"));
         currentActiveIndex = -1;
         if (toastEl) toastEl.remove();
-        // 也可以显示一个简短重置提示
+        
         const tempTip = document.createElement("div");
         tempTip.innerText = "✓ 高亮已重置，可重新探索情绪曲线";
         tempTip.style.position = "fixed";
@@ -773,7 +757,7 @@
         setTimeout(() => tempTip.remove(), 1500);
     }
     
-    // 初始化所有
+    
     function init() {
         renderStageCards();
         initChart();
@@ -781,12 +765,12 @@
         const resetBtn = document.getElementById("resetHighlightBtn");
         if (resetBtn) resetBtn.addEventListener("click", resetHighlights);
         
-        // 自动默认展示第一个阶段引导（可选，但为了体验不自动弹窗）
-        // 给首次使用者一个小提示
+        
+        
         setTimeout(() => {
             const hint = document.querySelector(".tooltip-hint");
             if (hint) {
-                // 简单闪烁效果
+                
                 hint.style.transition = "0.2s";
                 hint.style.backgroundColor = "#e2cfbd";
                 setTimeout(() => { if(hint) hint.style.backgroundColor = "#e9e1d7"; }, 600);
@@ -822,8 +806,8 @@
 
 <ul class="share-buttons">
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿vsLush 情绪旅程曲线图 on x"
-            href="https://x.com/intent/tweet/?text=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bfvsLush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f&amp;hashtags=%e5%b1%bf">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿 vs Lush 情绪旅程曲线图 on x"
+            href="https://x.com/intent/tweet/?text=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bf%20vs%20Lush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f&amp;hashtags=%e5%b1%bf">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -831,8 +815,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿vsLush 情绪旅程曲线图 on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f&amp;title=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bfvsLush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be&amp;summary=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bfvsLush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿 vs Lush 情绪旅程曲线图 on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f&amp;title=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bf%20vs%20Lush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be&amp;summary=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bf%20vs%20Lush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
@@ -840,8 +824,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿vsLush 情绪旅程曲线图 on reddit"
-            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f&title=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bfvsLush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿 vs Lush 情绪旅程曲线图 on reddit"
+            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f&title=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bf%20vs%20Lush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
@@ -849,7 +833,7 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿vsLush 情绪旅程曲线图 on facebook"
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿 vs Lush 情绪旅程曲线图 on facebook"
             href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
@@ -858,8 +842,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿vsLush 情绪旅程曲线图 on whatsapp"
-            href="https://api.whatsapp.com/send?text=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bfvsLush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be%20-%20http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿 vs Lush 情绪旅程曲线图 on whatsapp"
+            href="https://api.whatsapp.com/send?text=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bf%20vs%20Lush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be%20-%20http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
@@ -867,8 +851,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿vsLush 情绪旅程曲线图 on telegram"
-            href="https://telegram.me/share/url?text=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bfvsLush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿 vs Lush 情绪旅程曲线图 on telegram"
+            href="https://telegram.me/share/url?text=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bf%20vs%20Lush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f">
             <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
@@ -876,8 +860,8 @@
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿vsLush 情绪旅程曲线图 on ycombinator"
-            href="https://news.ycombinator.com/submitlink?t=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bfvsLush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be&u=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【商业企划】屿 vs Lush 情绪旅程曲线图 on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=%e3%80%90%e5%95%86%e4%b8%9a%e4%bc%81%e5%88%92%e3%80%91%e5%b1%bf%20vs%20Lush%20%e6%83%85%e7%bb%aa%e6%97%85%e7%a8%8b%e6%9b%b2%e7%ba%bf%e5%9b%be&u=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%25E5%25B1%25BFvslush-%25E6%2583%2585%25E7%25BB%25AA%25E6%2597%2585%25E7%25A8%258B%25E6%259B%25B2%25E7%25BA%25BF%25E5%259B%25BE%2f">
             <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
                 <path

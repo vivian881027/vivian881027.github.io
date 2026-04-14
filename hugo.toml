@@ -118,7 +118,12 @@ hasCJKLanguage = true
     isPlain = true
     mediaType = "application/json"
 
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
