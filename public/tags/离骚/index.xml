@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>离骚 on My Paprika Inn</title>
+    <link>http://localhost:1313/tags/%E7%A6%BB%E9%AA%9A/</link>
+    <description>Recent content in 离骚 on My Paprika Inn</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 31 Mar 2026 10:36:50 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E7%A6%BB%E9%AA%9A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>美人吟</title>
+      <link>http://localhost:1313/posts/2026/03/%E7%BE%8E%E4%BA%BA%E5%90%9F/</link>
+      <pubDate>Tue, 31 Mar 2026 10:36:50 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/03/%E7%BE%8E%E4%BA%BA%E5%90%9F/</guid>
+      <description>以“美人喻谋士”，承屈原香草比兴之法，托闺怨之辞写士不遇之痛。“推恩”“凿空”等具体变革举措隐去，转以美人香草的普遍性隐喻出之，暗示诗人已从前期“献策牵头”的进取阶段，进入反思与自伤之境。</description>
+    </item>
+  </channel>
+</rss>

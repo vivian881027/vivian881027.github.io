@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>海德格尔 on My Paprika Inn</title>
+    <link>http://localhost:1313/tags/%E6%B5%B7%E5%BE%B7%E6%A0%BC%E5%B0%94/</link>
+    <description>Recent content in 海德格尔 on My Paprika Inn</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Apr 2026 17:09:57 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%B5%B7%E5%BE%B7%E6%A0%BC%E5%B0%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【剧本】第一场雨：海德格尔——在世之在与“怕湿”</title>
+      <link>http://localhost:1313/posts/2026/04/%E5%89%A7%E6%9C%AC%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%A8%E6%B5%B7%E5%BE%B7%E6%A0%BC%E5%B0%94%E5%9C%A8%E4%B8%96%E4%B9%8B%E5%9C%A8%E4%B8%8E%E6%80%95%E6%B9%BF/</link>
+      <pubDate>Sat, 11 Apr 2026 17:09:57 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/04/%E5%89%A7%E6%9C%AC%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%A8%E6%B5%B7%E5%BE%B7%E6%A0%BC%E5%B0%94%E5%9C%A8%E4%B8%96%E4%B9%8B%E5%9C%A8%E4%B8%8E%E6%80%95%E6%B9%BF/</guid>
+      <description>你害怕的不是鞋湿，是“走路”变成了“保护鞋”。当工具从“被使用”变成“被观察”，你和世界的关系就断裂了。我是在走路，还是在保护鞋？</description>
+    </item>
+    <item>
+      <title>【剧本】麂皮与存在：雨天本体论</title>
+      <link>http://localhost:1313/posts/2026/04/%E5%89%A7%E6%9C%AC%E9%BA%82%E7%9A%AE%E4%B8%8E%E5%AD%98%E5%9C%A8%E9%9B%A8%E5%A4%A9%E6%9C%AC%E4%BD%93%E8%AE%BA/</link>
+      <pubDate>Sat, 11 Apr 2026 17:01:35 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/04/%E5%89%A7%E6%9C%AC%E9%BA%82%E7%9A%AE%E4%B8%8E%E5%AD%98%E5%9C%A8%E9%9B%A8%E5%A4%A9%E6%9C%AC%E4%BD%93%E8%AE%BA/</guid>
+      <description>麂皮是一种矛盾的材料：它柔软、高贵、触感绝佳，但极度脆弱——遇水即损，沾污即毁。它要求使用者生活在一个“可控的世界”里。穿麂皮鞋的原因：脚感让她“扎根于地面”，是抵抗数字异化的微小仪式</description>
+    </item>
+  </channel>
+</rss>

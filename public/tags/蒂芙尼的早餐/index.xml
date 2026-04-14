@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>蒂芙尼的早餐 on My Paprika Inn</title>
+    <link>http://localhost:1313/tags/%E8%92%82%E8%8A%99%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/</link>
+    <description>Recent content in 蒂芙尼的早餐 on My Paprika Inn</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Apr 2026 16:45:42 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E8%92%82%E8%8A%99%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【剧本】雨天的麂皮鞋</title>
+      <link>http://localhost:1313/posts/2026/04/%E5%89%A7%E6%9C%AC%E9%9B%A8%E5%A4%A9%E7%9A%84%E9%BA%82%E7%9A%AE%E9%9E%8B/</link>
+      <pubDate>Sat, 11 Apr 2026 16:45:42 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/04/%E5%89%A7%E6%9C%AC%E9%9B%A8%E5%A4%A9%E7%9A%84%E9%BA%82%E7%9A%AE%E9%9E%8B/</guid>
+      <description>尊严不是不沾泥，是沾了泥还敢往前走</description>
+    </item>
+  </channel>
+</rss>

@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>马克李维 on My Zen Garden</title>
+    <title>马克·李维 on My Paprika Inn</title>
     <link>http://localhost:1313/tags/%E9%A9%AC%E5%85%8B%E6%9D%8E%E7%BB%B4/</link>
-    <description>Recent content in 马克李维 on My Zen Garden</description>
+    <description>Recent content in 马克·李维 on My Paprika Inn</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 12 Feb 2026 21:19:23 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 17:31:45 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/%E9%A9%AC%E5%85%8B%E6%9D%8E%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>源码之爱 01</title>
-      <link>http://localhost:1313/posts/2026/02/%E6%BA%90%E7%A0%81%E4%B9%8B%E7%88%B1-01/</link>
-      <pubDate>Thu, 12 Feb 2026 21:19:23 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2026/02/%E6%BA%90%E7%A0%81%E4%B9%8B%E7%88%B1-01/</guid>
-      <description>我愿向你展示我生命的构成，并允许你以完全理性的方式，解构、分析、甚至质疑我存在的每一行代码——而我坚信，你在理解一切后，依然会选择拥抱这个有‘缺陷’但真实的我。</description>
+      <title>【现代诗】麂皮与雨</title>
+      <link>http://localhost:1313/posts/2026/04/%E7%8E%B0%E4%BB%A3%E8%AF%97%E9%BA%82%E7%9A%AE%E4%B8%8E%E9%9B%A8/</link>
+      <pubDate>Sat, 11 Apr 2026 17:31:45 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/04/%E7%8E%B0%E4%BB%A3%E8%AF%97%E9%BA%82%E7%9A%AE%E4%B8%8E%E9%9B%A8/</guid>
+      <description>她有一柜子的棕色，浅的像晨雾，深的像他咖啡杯里的渍，麂皮在光里呼吸，柔软如猫的耳廓</description>
+    </item>
+    <item>
+      <title>【散文】雨天见</title>
+      <link>http://localhost:1313/posts/2026/04/%E6%95%A3%E6%96%87%E9%9B%A8%E5%A4%A9%E8%A7%81/</link>
+      <pubDate>Sat, 11 Apr 2026 17:31:27 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/04/%E6%95%A3%E6%96%87%E9%9B%A8%E5%A4%A9%E8%A7%81/</guid>
+      <description>她有一柜子的鞋。全是棕色的。浅棕像拿铁表面的奶泡，栗棕像秋天的栗子壳，可可棕像融化的巧克力。每一双都是麂皮的，绒面在晨光里泛着一层柔软的光，像刚被梳过毛的猫。</description>
+    </item>
+    <item>
+      <title>【短篇】瑟堡的雨伞</title>
+      <link>http://localhost:1313/posts/2026/04/%E7%9F%AD%E7%AF%87%E7%91%9F%E5%A0%A1%E7%9A%84%E9%9B%A8%E4%BC%9E/</link>
+      <pubDate>Sat, 11 Apr 2026 17:30:55 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/04/%E7%9F%AD%E7%AF%87%E7%91%9F%E5%A0%A1%E7%9A%84%E9%9B%A8%E4%BC%9E/</guid>
+      <description>棕色。她只爱棕色。浅棕、栗棕、可可棕、太妃糖棕、秋天的落叶棕、下雨前的泥土棕。她说棕色是世界上最温柔的颜色，不争不抢，但你挪不开眼。</description>
+    </item>
+    <item>
+      <title>【剧本】雨天见</title>
+      <link>http://localhost:1313/posts/2026/04/%E5%89%A7%E6%9C%AC%E9%9B%A8%E5%A4%A9%E8%A7%81/</link>
+      <pubDate>Sat, 11 Apr 2026 17:30:10 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/04/%E5%89%A7%E6%9C%AC%E9%9B%A8%E5%A4%A9%E8%A7%81/</guid>
+      <description>爱的方式是行动：提前热车、永远把伞偏向她、下雨天绕路避开积水路段</description>
     </item>
   </channel>
 </rss>

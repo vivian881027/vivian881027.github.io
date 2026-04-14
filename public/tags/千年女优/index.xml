@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>千年女优 on My Zen Garden</title>
+    <title>千年女优 on My Paprika Inn</title>
     <link>http://localhost:1313/tags/%E5%8D%83%E5%B9%B4%E5%A5%B3%E4%BC%98/</link>
-    <description>Recent content in 千年女优 on My Zen Garden</description>
+    <description>Recent content in 千年女优 on My Paprika Inn</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Mar 2026 22:20:34 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 22:22:41 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/%E5%8D%83%E5%B9%B4%E5%A5%B3%E4%BC%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【专题周】宫崎骏与今敏作品集</title>
+      <link>http://localhost:1313/posts/2026/%E8%9E%8D%E5%90%88%E7%96%97%E6%84%88%E6%88%90%E9%95%BF%E8%AF%BE%E7%A8%8B/%E4%B8%93%E9%A2%98%E5%91%A8%E5%AE%AB%E5%B4%8E%E9%AA%8F%E4%B8%8E%E4%BB%8A%E6%95%8F%E4%BD%9C%E5%93%81%E9%9B%86/</link>
+      <pubDate>Fri, 10 Apr 2026 22:22:41 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/%E8%9E%8D%E5%90%88%E7%96%97%E6%84%88%E6%88%90%E9%95%BF%E8%AF%BE%E7%A8%8B/%E4%B8%93%E9%A2%98%E5%91%A8%E5%AE%AB%E5%B4%8E%E9%AA%8F%E4%B8%8E%E4%BB%8A%E6%95%8F%E4%BD%9C%E5%93%81%E9%9B%86/</guid>
+      <description>宫崎骏与今敏的作品是荣格心理学、英雄之旅与自性化过程最完美的影像教材。</description>
+    </item>
     <item>
       <title>红辣椒客栈：一份造梦者生存指南</title>
       <link>http://localhost:1313/posts/2026/03/%E7%BA%A2%E8%BE%A3%E6%A4%92%E5%AE%A2%E6%A0%88%E4%B8%80%E4%BB%BD%E9%80%A0%E6%A2%A6%E8%80%85%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97/</link>

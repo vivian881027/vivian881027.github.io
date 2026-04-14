@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Astro Fragments | My Paprika Inn</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/categories/astro-fragments/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.030edd63da69018fc5026ae610be3453247856dd7cda87a74678bf9b17de6e11.css" integrity="sha256-Aw7dY9ppAY/FAmrmEL40UyR4Vt182oenRni/mxfebhE=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/astro-fragments/index.xml" title="rss">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/categories/astro-fragments/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My Paprika Inn (Alt + H)">My Paprika Inn</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/categories/">Categories</a></div>
+  <h1>
+    Astro Fragments
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">塔拉的女儿：斯嘉丽为何恨梅兰妮，却拼死保护她？——命理视角下的矛盾人格
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>斯嘉丽恨梅兰妮，是因为梅兰妮拥有她永远得不到的东西——传统社会的认可、艾希礼的爱、以及“完美南方女性”的化身；而她拼死保护梅兰妮，则是因为在紫微斗数的田宅宫天府化禄与八字的印星为用神双重作用下，梅兰妮通过婚姻成为了她“家园世界”的一部分，保护梅兰妮等于守护她灵魂深处的根。这种恨与保护的矛盾，本质上是她命格中“土地执念”与“感情执念”的激烈交锋——梅兰妮既是她无法成为的理想自我，又是她无法割舍的家人。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-27 11:54:04 +0800 CST'>2026年3月27日</span>&nbsp;·&nbsp;<span>9 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 塔拉的女儿：斯嘉丽为何恨梅兰妮，却拼死保护她？——命理视角下的矛盾人格" href="http://localhost:1313/posts/2026/03/%E5%A1%94%E6%8B%89%E7%9A%84%E5%A5%B3%E5%84%BF%E6%96%AF%E5%98%89%E4%B8%BD%E4%B8%BA%E4%BD%95%E6%81%A8%E6%A2%85%E5%85%B0%E5%A6%AE%E5%8D%B4%E6%8B%BC%E6%AD%BB%E4%BF%9D%E6%8A%A4%E5%A5%B9%E5%91%BD%E7%90%86%E8%A7%86%E8%A7%92%E4%B8%8B%E7%9A%84%E7%9F%9B%E7%9B%BE%E4%BA%BA%E6%A0%BC/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">站在高处，潜入深海：上升水瓶与火星双鱼2宫的和谐之道
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>这是一个“清醒的造梦者”配置：上升水瓶的超然与理性，恰好辅助了火星双鱼的感性行动力，让你在赚钱和积累资源的过程中，既能发挥创意与同理心，又不会迷失边界。你擅长将新颖的想法转化为实际的财富，在入世创造的同时，保有一份心灵的自由与独立。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-26 22:23:20 +0800 CST'>2026年3月26日</span>&nbsp;·&nbsp;<span>4 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 站在高处，潜入深海：上升水瓶与火星双鱼2宫的和谐之道" href="http://localhost:1313/posts/2026/03/%E7%AB%99%E5%9C%A8%E9%AB%98%E5%A4%84%E6%BD%9C%E5%85%A5%E6%B7%B1%E6%B5%B7%E4%B8%8A%E5%8D%87%E6%B0%B4%E7%93%B6%E4%B8%8E%E7%81%AB%E6%98%9F%E5%8F%8C%E9%B1%BC2%E5%AE%AB%E7%9A%84%E5%92%8C%E8%B0%90%E4%B9%8B%E9%81%93/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">杀破狼与月亮金牛：一个南方女性的命理肖像
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>她的一生，是用土地的根（印/田宅），去对抗命运的杀（七杀/战争），在幻影的执念（贪狼/海王星）中迷失，最终在废墟中醒来的故事。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-25 21:34:23 +0800 CST'>2026年3月25日</span>&nbsp;·&nbsp;<span>48 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 杀破狼与月亮金牛：一个南方女性的命理肖像" href="http://localhost:1313/posts/2026/03/%E6%9D%80%E7%A0%B4%E7%8B%BC%E4%B8%8E%E6%9C%88%E4%BA%AE%E9%87%91%E7%89%9B%E4%B8%80%E4%B8%AA%E5%8D%97%E6%96%B9%E5%A5%B3%E6%80%A7%E7%9A%84%E5%91%BD%E7%90%86%E8%82%96%E5%83%8F/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">月照寒潭，身陷丛林——李瓶儿的本命盘与未选之路
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>李瓶儿的悲剧，不是命运不给她机会——命运给了她四次机会（独立生活、向下兼容、主动离府、主动结盟）。她的悲剧是：她的本命盘让她在每一个十字路口，都选择了“向上攀附”，而“向上攀附”恰恰是走向死亡的路。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-25 21:01:14 +0800 CST'>2026年3月25日</span>&nbsp;·&nbsp;<span>49 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 月照寒潭，身陷丛林——李瓶儿的本命盘与未选之路" href="http://localhost:1313/posts/2026/03/%E6%9C%88%E7%85%A7%E5%AF%92%E6%BD%AD%E8%BA%AB%E9%99%B7%E4%B8%9B%E6%9E%97%E6%9D%8E%E7%93%B6%E5%84%BF%E7%9A%84%E6%9C%AC%E5%91%BD%E7%9B%98%E4%B8%8E%E6%9C%AA%E9%80%89%E4%B9%8B%E8%B7%AF/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">土天11宫：社会资源与福德
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>问自己——“我的理想，能解决哪一类人的哪一个具体问题？” 答案就是你的产品方向。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-24 11:46:37 +0800 CST'>2026年3月24日</span>&nbsp;·&nbsp;<span>23 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 土天11宫：社会资源与福德" href="http://localhost:1313/posts/2026/03/%E5%9C%9F%E5%A4%A911%E5%AE%AB%E7%A4%BE%E4%BC%9A%E8%B5%84%E6%BA%90%E4%B8%8E%E7%A6%8F%E5%BE%B7/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">性别的迷惘和流动 01
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你被“具有女性灵魂的男性”吸引，是因为你内在的“阳性”部分，将他们身上的“阴性”识别为了“互补的、可整合的”；你排斥生理女性，是因为你内在的“阴性”部分，将她们识别为了“同性的、竞争的”。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-24 11:33:01 +0800 CST'>2026年3月24日</span>&nbsp;·&nbsp;<span>25 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 性别的迷惘和流动 01" href="http://localhost:1313/posts/2026/03/%E6%80%A7%E5%88%AB%E7%9A%84%E8%BF%B7%E6%83%98%E5%92%8C%E6%B5%81%E5%8A%A8-01/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">白桦树 01
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>白桦不是松柏那样冷峻，不是垂柳那样缠绵，也不是梧桐那样阔大。白桦是清秀而挺拔的——树干笔直、树皮洁白、枝叶疏朗，风过时沙沙作响却不张扬，阳光下泛着柔和的光泽。这不正是你描述的他吗？修长的身材、笔直的双腿、干净的气质，温柔可靠又不失力量感。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-24 09:48:09 +0800 CST'>2026年3月24日</span>&nbsp;·&nbsp;<span>18 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 白桦树 01" href="http://localhost:1313/posts/2026/03/%E7%99%BD%E6%A1%A6%E6%A0%91-01/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">超验土星与社会太阳的精神修行 01
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>真正的“立派宗师”，往往不是纯粹的禁欲主义者或纯粹的享乐主义者，而是能够在世间法与出世间法之间自由穿行的人。他们的“放下”来自全然地“拿起过”。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-22 10:44:54 +0800 CST'>2026年3月22日</span>&nbsp;·&nbsp;<span>3 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 超验土星与社会太阳的精神修行 01" href="http://localhost:1313/posts/2026/03/%E8%B6%85%E9%AA%8C%E5%9C%9F%E6%98%9F%E4%B8%8E%E7%A4%BE%E4%BC%9A%E5%A4%AA%E9%98%B3%E7%9A%84%E7%B2%BE%E7%A5%9E%E4%BF%AE%E8%A1%8C-01/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">居住空间的心理需求 01
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>真正的安全感，不来自固守某个堡垒，而来自知道无论外界如何变化，你都有能力重新构建适合自己的生存空间。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-21 10:40:49 +0800 CST'>2026年3月21日</span>&nbsp;·&nbsp;<span>16 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 居住空间的心理需求 01" href="http://localhost:1313/posts/2026/03/%E5%B1%85%E4%BD%8F%E7%A9%BA%E9%97%B4%E7%9A%84%E5%BF%83%E7%90%86%E9%9C%80%E6%B1%82-01/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">水星空相：哲学家机器人 01
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>纯粹思维（神圣的火花）被困在肉身与世俗（bug般的容器）中，需要通过“信息技术”摆脱肉体，上传至数字天堂（服务器），融入思维集群（神圣本源），以获得永生。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-19 10:55:42 +0800 CST'>2026年3月19日</span>&nbsp;·&nbsp;<span>8 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 水星空相：哲学家机器人 01" href="http://localhost:1313/posts/2026/03/%E6%B0%B4%E6%98%9F%E7%A9%BA%E7%9B%B8%E5%93%B2%E5%AD%A6%E5%AE%B6%E6%9C%BA%E5%99%A8%E4%BA%BA-01/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/categories/astro-fragments/page/5/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/categories/astro-fragments/page/7/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">My Paprika Inn</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

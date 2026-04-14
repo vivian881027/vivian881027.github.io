@@ -117,3 +117,8 @@ hasCJKLanguage = true
     baseName = "index"
     isPlain = true
     mediaType = "application/json"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

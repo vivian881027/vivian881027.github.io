@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Fiction on My Zen Garden</title>
+    <title>Fiction on My Paprika Inn</title>
     <link>http://localhost:1313/categories/fiction/</link>
-    <description>Recent content in Fiction on My Zen Garden</description>
+    <description>Recent content in Fiction on My Paprika Inn</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Mar 2026 11:52:15 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 11:44:24 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/fiction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>造梦工厂</title>
+      <link>http://localhost:1313/posts/2026/03/%E9%80%A0%E6%A2%A6%E5%B7%A5%E5%8E%82/</link>
+      <pubDate>Tue, 31 Mar 2026 11:44:24 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/03/%E9%80%A0%E6%A2%A6%E5%B7%A5%E5%8E%82/</guid>
+      <description>“梦想？梦想是包装纸，里面包的是生意。”</description>
+    </item>
+    <item>
+      <title>假面的诅咒</title>
+      <link>http://localhost:1313/posts/2026/03/%E5%81%87%E9%9D%A2%E7%9A%84%E8%AF%85%E5%92%92/</link>
+      <pubDate>Tue, 31 Mar 2026 11:21:26 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/03/%E5%81%87%E9%9D%A2%E7%9A%84%E8%AF%85%E5%92%92/</guid>
+      <description>当“国风仙女”人设的顶流女星虞曼卿因一场事故毁容，商业帝国崩塌，她被迫从零开始，在现实的泥沼中洗尽铅华，最终找回真正的艺术灵魂。</description>
+    </item>
     <item>
       <title>银座没有夜晚：最后一个被AI取代的职业</title>
       <link>http://localhost:1313/posts/2026/03/%E9%93%B6%E5%BA%A7%E6%B2%A1%E6%9C%89%E5%A4%9C%E6%99%9A%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E8%A2%ABai%E5%8F%96%E4%BB%A3%E7%9A%84%E8%81%8C%E4%B8%9A/</link>

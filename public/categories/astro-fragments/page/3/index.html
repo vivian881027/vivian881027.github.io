@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Astro Fragments | My Paprika Inn</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/categories/astro-fragments/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.030edd63da69018fc5026ae610be3453247856dd7cda87a74678bf9b17de6e11.css" integrity="sha256-Aw7dY9ppAY/FAmrmEL40UyR4Vt182oenRni/mxfebhE=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/astro-fragments/index.xml" title="rss">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/categories/astro-fragments/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My Paprika Inn (Alt + H)">My Paprika Inn</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/categories/">Categories</a></div>
+  <h1>
+    Astro Fragments
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">【行运解读】火星行运报告20260407
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>火星同时激活 2宫（自我价值/金钱/资源）&#43; 8宫（亲密资源/债务/他人钱财）&#43; 11宫（朋友/群体/长期理想）</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-12 21:26:32 +0800 CST'>2026年4月12日</span>&nbsp;·&nbsp;<span>6 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 【行运解读】火星行运报告20260407" href="http://localhost:1313/posts/2026/04/%E8%A1%8C%E8%BF%90%E8%A7%A3%E8%AF%BB%E7%81%AB%E6%98%9F%E8%A1%8C%E8%BF%90%E6%8A%A5%E5%91%8A20260407/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">【行运解读】通过行运时间线定位创业里程碑地图
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你的成功不是来自“做得多”，而是来自“把一个东西做完”。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-12 20:22:01 +0800 CST'>2026年4月12日</span>&nbsp;·&nbsp;<span>17 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 【行运解读】通过行运时间线定位创业里程碑地图" href="http://localhost:1313/posts/2026/04/%E8%A1%8C%E8%BF%90%E8%A7%A3%E8%AF%BB%E9%80%9A%E8%BF%87%E8%A1%8C%E8%BF%90%E6%97%B6%E9%97%B4%E7%BA%BF%E5%AE%9A%E4%BD%8D%E5%88%9B%E4%B8%9A%E9%87%8C%E7%A8%8B%E7%A2%91%E5%9C%B0%E5%9B%BE/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">【行运解读】2026 04 07
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你的本命盘是“人生剧本”或“身体底子”，而行运盘是“当下天气”或“外部刺激”。行运解读就是看“外部天气”如何影响你的“剧本”。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-12 20:16:33 +0800 CST'>2026年4月12日</span>&nbsp;·&nbsp;<span>5 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 【行运解读】2026 04 07" href="http://localhost:1313/posts/2026/04/%E8%A1%8C%E8%BF%90%E8%A7%A3%E8%AF%BB2026-04-07/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">替罪羊与王座：一个女性精神结构的星盘、文学与命运
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一个“一直在负责任，永远不当好人”的女性精神结构，在家庭与职场中反复成为替罪羊、背锅侠与第三者。本文通过占星学（天王星/土星刑克金星）、文学形象（周芷若、小龙女、斯嘉丽）与心理结构（弑父恋母、逃避王座），揭示其命运脚本的根源，并指出整合之路。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-12 17:23:26 +0800 CST'>2026年4月12日</span>&nbsp;·&nbsp;<span>59 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 替罪羊与王座：一个女性精神结构的星盘、文学与命运" href="http://localhost:1313/posts/2026/04/%E6%9B%BF%E7%BD%AA%E7%BE%8A%E4%B8%8E%E7%8E%8B%E5%BA%A7%E4%B8%80%E4%B8%AA%E5%A5%B3%E6%80%A7%E7%B2%BE%E7%A5%9E%E7%BB%93%E6%9E%84%E7%9A%84%E6%98%9F%E7%9B%98%E6%96%87%E5%AD%A6%E4%B8%8E%E5%91%BD%E8%BF%90/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">占星学和荣格心理学理论的联系
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>占星学与荣格心理学通过原型理论共享一套符号语言，荣格用共时性原理解释了行星运行与心理事件的非因果关联，两者在“个体化进程”的叙事上高度同构，但前者是象征地图，后者是临床科学。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-12 16:00:22 +0800 CST'>2026年4月12日</span>&nbsp;·&nbsp;<span>3 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 占星学和荣格心理学理论的联系" href="http://localhost:1313/posts/2026/04/%E5%8D%A0%E6%98%9F%E5%AD%A6%E5%92%8C%E8%8D%A3%E6%A0%BC%E5%BF%83%E7%90%86%E5%AD%A6%E7%90%86%E8%AE%BA%E7%9A%84%E8%81%94%E7%B3%BB/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">星辰的两种书写：张纯如原盘与假设盘的对读——从冥王处女到火星双鱼，从穀神天蝎到月木双子
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>通过对比张纯如原盘（金水双鱼8宫对分冥王处女2宫、穀神天蝎4宫）与一个系统性调整的假设盘（金水天秤/处女8宫互溶对冲火星双鱼2宫、冥日合蝎MC、月木双子4宫、穀神双鱼2宫合北交），揭示不同配置如何塑造“承受黑暗却不被淹没”的能力，以及心理韧性的星盘条件。原盘的悲剧令人心碎，而假设盘则展示了另一种可能：依然深刻、悲悯，却拥有更强的心理免疫系统。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-12 15:33:41 +0800 CST'>2026年4月12日</span>&nbsp;·&nbsp;<span>37 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 星辰的两种书写：张纯如原盘与假设盘的对读——从冥王处女到火星双鱼，从穀神天蝎到月木双子" href="http://localhost:1313/posts/2026/04/%E6%98%9F%E8%BE%B0%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%B9%A6%E5%86%99%E5%BC%A0%E7%BA%AF%E5%A6%82%E5%8E%9F%E7%9B%98%E4%B8%8E%E5%81%87%E8%AE%BE%E7%9B%98%E7%9A%84%E5%AF%B9%E8%AF%BB%E4%BB%8E%E5%86%A5%E7%8E%8B%E5%A4%84%E5%A5%B3%E5%88%B0%E7%81%AB%E6%98%9F%E5%8F%8C%E9%B1%BC%E4%BB%8E%E7%A9%80%E7%A5%9E%E5%A4%A9%E8%9D%8E%E5%88%B0%E6%9C%88%E6%9C%A8%E5%8F%8C%E5%AD%90/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">【行运解读】太阳三分本命火星
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你会在资源与行动上迎来一段非常顺畅的加速期，但真正的成长不在你多快获得或改变什么，而在于你能否在顺畅中依然看见物质之外的人与意义。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-12 15:10:02 +0800 CST'>2026年4月12日</span>&nbsp;·&nbsp;<span>7 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 【行运解读】太阳三分本命火星" href="http://localhost:1313/posts/2026/04/%E8%A1%8C%E8%BF%90%E8%A7%A3%E8%AF%BB%E5%A4%AA%E9%98%B3%E4%B8%89%E5%88%86%E6%9C%AC%E5%91%BD%E7%81%AB%E6%98%9F/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">一份“付出＞回报”星盘的深度转化指南：财富能量流通方式调整的四个核心要点
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>停止用服务他人的旧地图，走建立自我价值的新路。把专业能力变成资产，把合作关系变成契约，把对平台的依赖变成对自身根基的信任——你的利润会追上你，而不是你追着它跑。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-06 22:46:26 +0800 CST'>2026年4月6日</span>&nbsp;·&nbsp;<span>3 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 一份“付出＞回报”星盘的深度转化指南：财富能量流通方式调整的四个核心要点" href="http://localhost:1313/posts/2026/04/%E4%B8%80%E4%BB%BD%E4%BB%98%E5%87%BA%E5%9B%9E%E6%8A%A5%E6%98%9F%E7%9B%98%E7%9A%84%E6%B7%B1%E5%BA%A6%E8%BD%AC%E5%8C%96%E6%8C%87%E5%8D%97%E8%B4%A2%E5%AF%8C%E8%83%BD%E9%87%8F%E6%B5%81%E9%80%9A%E6%96%B9%E5%BC%8F%E8%B0%83%E6%95%B4%E7%9A%84%E5%9B%9B%E4%B8%AA%E6%A0%B8%E5%BF%83%E8%A6%81%E7%82%B9/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">利用“临界状态”（交界线星体）的跨界力
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>交界线星体不是在惩罚你，而是在训练你“在两个世界之间行走”的能力。所有“临界”都是你的武器，前提是你不再试图用“非此即彼”的逻辑来要求回报。当你学会主动选择面向、设计跨界节奏、建立稳定锚点——你的“付出”和“回报”就不再是线性关系，而是“跨维度的跃迁”。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-06 22:29:07 +0800 CST'>2026年4月6日</span>&nbsp;·&nbsp;<span>6 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 利用“临界状态”（交界线星体）的跨界力" href="http://localhost:1313/posts/2026/04/%E5%88%A9%E7%94%A8%E4%B8%B4%E7%95%8C%E7%8A%B6%E6%80%81%E4%BA%A4%E7%95%8C%E7%BA%BF%E6%98%9F%E4%BD%93%E7%9A%84%E8%B7%A8%E7%95%8C%E5%8A%9B/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">理解Yod的指令：为什么Yod需要“转化”而不是“解决”
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>从金火冲到Yod格局：一份“付出＞回报”星盘的深度转化指南</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-06 21:59:34 +0800 CST'>2026年4月6日</span>&nbsp;·&nbsp;<span>5 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 理解Yod的指令：为什么Yod需要“转化”而不是“解决”" href="http://localhost:1313/posts/2026/04/%E7%90%86%E8%A7%A3yod%E7%9A%84%E6%8C%87%E4%BB%A4%E4%B8%BA%E4%BB%80%E4%B9%88yod%E9%9C%80%E8%A6%81%E8%BD%AC%E5%8C%96%E8%80%8C%E4%B8%8D%E6%98%AF%E8%A7%A3%E5%86%B3/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/categories/astro-fragments/page/2/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/categories/astro-fragments/page/4/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">My Paprika Inn</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

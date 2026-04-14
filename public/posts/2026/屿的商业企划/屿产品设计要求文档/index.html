@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>“屿”产品设计要求文档 | My Paprika Inn</title>
+<meta name="keywords" content="屿">
+<meta name="description" content="日常生活中的一座孤岛，5分钟的绝对自我时刻。">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/2026/%E5%B1%BF%E7%9A%84%E5%95%86%E4%B8%9A%E4%BC%81%E5%88%92/%E5%B1%BF%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82%E6%96%87%E6%A1%A3/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.030edd63da69018fc5026ae610be3453247856dd7cda87a74678bf9b17de6e11.css" integrity="sha256-Aw7dY9ppAY/FAmrmEL40UyR4Vt182oenRni/mxfebhE=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/2026/%E5%B1%BF%E7%9A%84%E5%95%86%E4%B8%9A%E4%BC%81%E5%88%92/%E5%B1%BF%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82%E6%96%87%E6%A1%A3/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My Paprika Inn (Alt + H)">My Paprika Inn</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      “屿”产品设计要求文档
+    </h1>
+    <div class="post-meta"><span title='2026-04-12 13:35:11 +0800 CST'>2026年4月12日</span>&nbsp;·&nbsp;<span>6 分钟</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="屿产品设计要求文档">“屿”产品设计要求文档<a hidden class="anchor" aria-hidden="true" href="#屿产品设计要求文档">#</a></h1>
+<p><strong>版本</strong>：V1.0<br>
+<strong>日期</strong>：2026年4月<br>
+<strong>密级</strong>：保密（仅限OEM代工厂及内部研发）<br>
+<strong>适用产品</strong>：屿 手工香皂（核心产品线及季节限定）</p>
+<h2 id="一文档目的">一、文档目的<a hidden class="anchor" aria-hidden="true" href="#一文档目的">#</a></h2>
+<p>本文档用于指导OEM代工厂生产符合“屿”品牌定位的手工香皂。所有参数均为<strong>强制要求</strong>，偏离需经品牌方书面确认。</p>
+<p><strong>核心原则</strong>：</p>
+<blockquote>
+<p>屿不卖清洁功能。屿卖的是：冷杉嗅觉指纹 × 起泡仪式感 × 皮肤膜感叙事。<br>
+以下所有参数服务于这三大体验锚点。</p></blockquote>
+<h2 id="二基础配方架构">二、基础配方架构<a hidden class="anchor" aria-hidden="true" href="#二基础配方架构">#</a></h2>
+<h3 id="21-油脂基底冷制皂工艺">2.1 油脂基底（冷制皂工艺）<a hidden class="anchor" aria-hidden="true" href="#21-油脂基底冷制皂工艺">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">成分</th>
+          <th style="text-align: left">比例</th>
+          <th style="text-align: left">功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">橄榄油</td>
+          <td style="text-align: left">40%</td>
+          <td style="text-align: left">基底油，提供滋润感和保湿膜感</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">椰子油</td>
+          <td style="text-align: left">20%</td>
+          <td style="text-align: left">起泡力来源（但需控制，避免过度起泡）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">乳木果油</td>
+          <td style="text-align: left">15%</td>
+          <td style="text-align: left">增加膏体硬度，提供成膜感</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">可可脂</td>
+          <td style="text-align: left">10%</td>
+          <td style="text-align: left">增强皮肤残留膜感</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">杏核油</td>
+          <td style="text-align: left">10%</td>
+          <td style="text-align: left">轻盈感，平衡厚重</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">蓖麻油</td>
+          <td style="text-align: left">5%</td>
+          <td style="text-align: left">稳定泡沫，增加稠度</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>关键要求</strong>：</p>
+<ul>
+<li>椰子油比例<strong>不得超过20%</strong>，否则起泡过快过大，破坏“起泡延迟”设计</li>
+<li>乳木果油 + 可可脂总比例<strong>不低于25%</strong>，确保洗后膜感</li>
+</ul>
+<h3 id="22-水相">2.2 水相<a hidden class="anchor" aria-hidden="true" href="#22-水相">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">成分</th>
+          <th style="text-align: left">要求</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">基础水相</td>
+          <td style="text-align: left">蒸馏水或植物纯露（推荐：冷杉纯露或岩玫瑰纯露）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">减碱</td>
+          <td style="text-align: left">减碱5%-8%（降低游离碱，增强温和度和膜感）</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>关键要求</strong>：</p>
+<ul>
+<li>必须减碱。标准制皂减碱0%-3%，“屿”要求<strong>5%-8%</strong>，以保留更多未皂化油脂，形成皮肤膜感</li>
+</ul>
+<h2 id="三核心体验参数">三、核心体验参数<a hidden class="anchor" aria-hidden="true" href="#三核心体验参数">#</a></h2>
+<h3 id="31-冷杉基底浓度嗅觉指纹">3.1 冷杉基底浓度（嗅觉指纹）<a hidden class="anchor" aria-hidden="true" href="#31-冷杉基底浓度嗅觉指纹">#</a></h3>
+<p><strong>目标</strong>：所有产品（无论主调是什么）都能闻到一致的冷杉+乳香基底味</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">参数</th>
+          <th style="text-align: left">要求</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>冷杉精油</strong></td>
+          <td style="text-align: left">占配方总精油量的<strong>40%-50%</strong>（固定值，不随主调变化）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>乳香精油</strong></td>
+          <td style="text-align: left">占配方总精油量的<strong>15%-20%</strong>（固定值）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>主调精油</strong></td>
+          <td style="text-align: left">占配方总精油量的<strong>30%-45%</strong>（视具体SKU调整）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>总精油添加量</strong></td>
+          <td style="text-align: left">皂液总重量的<strong>3%-5%</strong>（高于行业平均2%，确保留香）</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>操作说明</strong>：</p>
+<ul>
+<li>每批次生产前，先按固定比例配制“屿基底精油”（冷杉:乳香 = 70:30 体积比）</li>
+<li>基底精油占最终精油混合物的<strong>60%-65%</strong></li>
+<li>主调精油（如海盐、苔藓、紫罗兰）占<strong>35%-40%</strong></li>
+</ul>
+<p><strong>验证方法</strong>：</p>
+<ul>
+<li>成品皂化熟成后（4-6周），由3名以上测试员闻香</li>
+<li>必须能清晰辨识冷杉基底味，且冷杉味与主调味比例约为<strong>6:4</strong></li>
+<li>冷杉味不得被主调完全掩盖</li>
+</ul>
+<p><strong>常见问题</strong>：</p>
+<blockquote>
+<p>冷杉精油在皂化过程中会挥发一部分。建议在<strong>轻T（轻度稠化）</strong> 时加入精油，且皂化温度控制在<strong>35-40℃</strong>，避免高温导致挥发。</p></blockquote>
+<h3 id="32-起泡延迟参数仪式感">3.2 起泡延迟参数（仪式感）<a hidden class="anchor" aria-hidden="true" href="#32-起泡延迟参数仪式感">#</a></h3>
+<p><strong>目标</strong>：用户需要主动搓揉10秒以上，才能产生浓密的乳霜状泡沫</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">参数</th>
+          <th style="text-align: left">要求</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>起泡延迟时间</strong></td>
+          <td style="text-align: left">双手干搓（无水条件下）需<strong>8-12秒</strong>才出现明显泡沫</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>泡沫密度</strong></td>
+          <td style="text-align: left">泡沫应为<strong>小泡、绵密、乳霜状</strong>，非大泡、蓬松状</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>泡沫量</strong></td>
+          <td style="text-align: left">中等（不追求大量泡沫）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>椰子油比例上限</strong></td>
+          <td style="text-align: left"><strong>20%</strong>（超过会起泡过快）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>硬脂酸添加</strong></td>
+          <td style="text-align: left"><strong>禁止添加</strong>硬脂酸或起泡剂（如SLS/SLES）</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>操作说明</strong>：</p>
+<ul>
+<li>通过降低椰子油比例 + 提高乳木果油/可可脂来实现延迟起泡</li>
+<li>如需微调，可添加<strong>0.5%-1% 蜂蜡</strong>进一步抑制起泡速度</li>
+</ul>
+<p><strong>验证方法</strong>：</p>
+<ul>
+<li>25℃室温下，测试员双手打湿，取皂搓揉</li>
+<li>计时从开始搓揉到出现明显乳霜状泡沫</li>
+<li>要求：<strong>8-12秒</strong>（允许±1秒误差）</li>
+<li>泡沫置于黑色背景上观察：应为白色不透明、细小气泡</li>
+</ul>
+<p><strong>常见问题</strong>：</p>
+<blockquote>
+<p>用户反馈“不起泡”是预期内的。需在包装上说明“搓揉10次”的仪式指引。如用户仍抱怨，可附赠打泡网。</p></blockquote>
+<h3 id="33-皮肤膜感参数叙事延续">3.3 皮肤膜感参数（叙事延续）<a hidden class="anchor" aria-hidden="true" href="#33-皮肤膜感参数叙事延续">#</a></h3>
+<p><strong>目标</strong>：洗后皮肤留下微滑、微保湿的膜感，持续15-30分钟</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">参数</th>
+          <th style="text-align: left">要求</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>膜感强度</strong></td>
+          <td style="text-align: left">洗后擦干，皮肤表面应有<strong>可感知的滑感</strong>（非油腻）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>膜感持续时间</strong></td>
+          <td style="text-align: left">自然状态下（不涂身体乳）持续<strong>15-30分钟</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>油脂残留量</strong></td>
+          <td style="text-align: left">通过减碱5%-8% + 高比例乳木果油/可可脂实现</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>添加物</strong></td>
+          <td style="text-align: left">可添加<strong>0.5%-1% 海藻提取物</strong>或<strong>燕麦胶体</strong>增强成膜感</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>操作说明</strong>：</p>
+<ul>
+<li>不追求“涩手=干净”的传统肤感</li>
+<li>膜感应是“清爽的滑”，而非“油腻的滑”</li>
+<li>如测试中感觉油腻，可降低可可脂比例、增加杏核油</li>
+</ul>
+<p><strong>验证方法</strong>：</p>
+<ul>
+<li>清洗后擦干，5分钟后由测试员自评肤感（1-5分，4分为目标）</li>
+<li>20分钟后再次评估，应仍有轻微滑感</li>
+<li>用透明胶带贴皮肤后撕下，观察皮脂残留量（定性即可）</li>
+</ul>
+<p><strong>常见问题</strong>：</p>
+<blockquote>
+<p>用户可能误以为“没洗干净”。需在包装和详情页教育：“这不是残留，是你的‘皮肤海盐壳’。”</p></blockquote>
+<h2 id="四物理规格">四、物理规格<a hidden class="anchor" aria-hidden="true" href="#四物理规格">#</a></h2>
+<h3 id="41-皂体尺寸">4.1 皂体尺寸<a hidden class="anchor" aria-hidden="true" href="#41-皂体尺寸">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">参数</th>
+          <th style="text-align: left">要求</th>
+          <th style="text-align: left">公差</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">长度</td>
+          <td style="text-align: left">80mm</td>
+          <td style="text-align: left">±2mm</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">宽度</td>
+          <td style="text-align: left">60mm</td>
+          <td style="text-align: left">±2mm</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">高度</td>
+          <td style="text-align: left">30mm</td>
+          <td style="text-align: left">±2mm</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">重量</td>
+          <td style="text-align: left">120g</td>
+          <td style="text-align: left">±5g</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">形状</td>
+          <td style="text-align: left">圆角方块（类似河卵石）</td>
+          <td style="text-align: left">四角R角8-10mm</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>关键要求</strong>：</p>
+<ul>
+<li>边缘<strong>不得过于规整</strong>，需保留手工切割的轻微不平整感</li>
+<li>表面可保留轻微的手工痕迹（非模具压制的完美光滑）</li>
+</ul>
+<h3 id="42-视觉纹理">4.2 视觉纹理<a hidden class="anchor" aria-hidden="true" href="#42-视觉纹理">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">SKU</th>
+          <th style="text-align: left">主色</th>
+          <th style="text-align: left">纹理要求</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">雨林与海</td>
+          <td style="text-align: left">墨绿 + 灰白</td>
+          <td style="text-align: left">大理石纹，不规则混合，无固定图案</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">地衣与火</td>
+          <td style="text-align: left">灰绿 + 暗橙斑点</td>
+          <td style="text-align: left">灰绿基底，暗橙色点状或细线状分布</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">融雪</td>
+          <td style="text-align: left">半透明白 + 深色细点</td>
+          <td style="text-align: left">白色基底略带透明感，表面有深色细小颗粒</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>通用要求</strong>：</p>
+<ul>
+<li>色彩饱和度为<strong>低饱和</strong>（禁止荧光色、高饱和色）</li>
+<li>允许色差——每块皂颜色略有不同是可接受的（“手工感”）</li>
+</ul>
+<h3 id="43-添加物视觉与触感">4.3 添加物（视觉与触感）<a hidden class="anchor" aria-hidden="true" href="#43-添加物视觉与触感">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">添加物</th>
+          <th style="text-align: left">SKU</th>
+          <th style="text-align: left">要求</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">海藻碎</td>
+          <td style="text-align: left">雨林与海</td>
+          <td style="text-align: left">0.5%-1%，可见但不过密</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">火山石粉末</td>
+          <td style="text-align: left">地衣与火</td>
+          <td style="text-align: left">1%-2%，提供细微颗粒感</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">燕麦片</td>
+          <td style="text-align: left">融雪</td>
+          <td style="text-align: left">0.5%-1%，细小碎片</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">矿物粉（天然色素）</td>
+          <td style="text-align: left">所有</td>
+          <td style="text-align: left">仅使用天然矿物色素（云母、氧化铁、绿泥石等）</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="五生产流程要求">五、生产流程要求<a hidden class="anchor" aria-hidden="true" href="#五生产流程要求">#</a></h2>
+<h3 id="51-温度控制">5.1 温度控制<a hidden class="anchor" aria-hidden="true" href="#51-温度控制">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">环节</th>
+          <th style="text-align: left">温度要求</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">油碱混合</td>
+          <td style="text-align: left">35-40℃</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">精油添加</td>
+          <td style="text-align: left">轻T阶段（35-38℃）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">入模后保温</td>
+          <td style="text-align: left">24-30℃，48小时</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">切割时机</td>
+          <td style="text-align: left">入模后48-72小时</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="52-熟成皂化时间">5.2 熟成（皂化）时间<a hidden class="anchor" aria-hidden="true" href="#52-熟成皂化时间">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">要求</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">最小熟成时间</td>
+          <td style="text-align: left"><strong>4周</strong>（28天）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">推荐熟成时间</td>
+          <td style="text-align: left"><strong>6周</strong>（42天）——pH值更低，膜感更优</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">熟成环境</td>
+          <td style="text-align: left">通风、避光、温度20-25℃，湿度&lt;60%</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="53-品控抽检">5.3 品控抽检<a hidden class="anchor" aria-hidden="true" href="#53-品控抽检">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">检测项</th>
+          <th style="text-align: left">频率</th>
+          <th style="text-align: left">接受标准</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">起泡延迟时间</td>
+          <td style="text-align: left">每批次3块</td>
+          <td style="text-align: left">8-12秒</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">膜感评估</td>
+          <td style="text-align: left">每批次3块</td>
+          <td style="text-align: left">5分钟滑感≥4/5</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">冷杉气味强度</td>
+          <td style="text-align: left">每批次3块</td>
+          <td style="text-align: left">冷杉基底清晰可辨</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">pH值</td>
+          <td style="text-align: left">每批次3块</td>
+          <td style="text-align: left">7.5-9.0（冷制皂正常范围）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">重量</td>
+          <td style="text-align: left">每批次10%</td>
+          <td style="text-align: left">115-125g</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="六包装与标识要求">六、包装与标识要求<a hidden class="anchor" aria-hidden="true" href="#六包装与标识要求">#</a></h2>
+<h3 id="61-皂体标识">6.1 皂体标识<a hidden class="anchor" aria-hidden="true" href="#61-皂体标识">#</a></h3>
+<ul>
+<li><strong>不直接印logo在皂体上</strong>（保持自然感）</li>
+<li>可用<strong>可食用色粉</strong>在侧面点一个小点表示批次（可选）</li>
+</ul>
+<h3 id="62-内包装">6.2 内包装<a hidden class="anchor" aria-hidden="true" href="#62-内包装">#</a></h3>
+<ul>
+<li>亚麻束口袋（品牌方提供或指定供应商）</li>
+<li>每块皂独立装袋</li>
+</ul>
+<h3 id="63-外包装盒">6.3 外包装盒<a hidden class="anchor" aria-hidden="true" href="#63-外包装盒">#</a></h3>
+<ul>
+<li>水洗牛皮纸，品牌方提供设计稿</li>
+<li>每盒内置一张棉纸说明书（正面“登岛仪式”，背面故事）</li>
+</ul>
+<h3 id="64-批次追溯">6.4 批次追溯<a hidden class="anchor" aria-hidden="true" href="#64-批次追溯">#</a></h3>
+<ul>
+<li>在外盒底部贴小标签：生产日期、批次号、有效期（2年）</li>
+</ul>
+<h2 id="七常见问题与拒绝标准">七、常见问题与拒绝标准<a hidden class="anchor" aria-hidden="true" href="#七常见问题与拒绝标准">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">问题</th>
+          <th style="text-align: left">处理</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">椰子油比例 &gt;20%</td>
+          <td style="text-align: left"><strong>拒收</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">起泡延迟 &lt;6秒</td>
+          <td style="text-align: left"><strong>拒收</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">膜感评分 &lt;3/5</td>
+          <td style="text-align: left">批次降级，需重新调整配方</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">冷杉基底味不可辨</td>
+          <td style="text-align: left"><strong>拒收</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">添加人工色素或SLS</td>
+          <td style="text-align: left"><strong>拒收</strong>，终止合作</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">重量 &lt;115g</td>
+          <td style="text-align: left">补发或折价，但批次超标则拒收</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">pH &gt;10</td>
+          <td style="text-align: left">延长熟成时间，复检合格后发货</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="八沟通与审批">八、沟通与审批<a hidden class="anchor" aria-hidden="true" href="#八沟通与审批">#</a></h2>
+<h3 id="81-打样阶段">8.1 打样阶段<a hidden class="anchor" aria-hidden="true" href="#81-打样阶段">#</a></h3>
+<ul>
+<li>提供<strong>3轮打样</strong>，每轮不少于10块</li>
+<li>品牌方每轮提供书面反馈</li>
+</ul>
+<h3 id="82-量产阶段">8.2 量产阶段<a hidden class="anchor" aria-hidden="true" href="#82-量产阶段">#</a></h3>
+<ul>
+<li>首单最小起订量：<strong>500块</strong>（可混合SKU）</li>
+<li>每批次提供<strong>3块留样</strong>（品牌方留存）</li>
+</ul>
+<h3 id="83-联系方式">8.3 联系方式<a hidden class="anchor" aria-hidden="true" href="#83-联系方式">#</a></h3>
+<ul>
+<li>技术对接：[品牌方研发负责人]</li>
+<li>紧急联系：[品牌方供应链负责人]</li>
+</ul>
+<hr>
+<p><strong>文档结束</strong></p>
+<p><strong>签字栏</strong>（双方确认）：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">角色</th>
+          <th style="text-align: left">签字</th>
+          <th style="text-align: left">日期</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">品牌方（屿）</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">OEM代工厂</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/%E5%B1%BF/">屿</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/2026/%E5%B1%BF%E7%9A%84%E5%95%86%E4%B8%9A%E4%BC%81%E5%88%92/%E4%B8%89%E6%AC%BE%E6%A0%B8%E5%BF%83sku%E7%9A%84%E6%A6%82%E5%BF%B5%E8%AE%BE%E8%AE%A1%E5%9B%BE/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>三款核心SKU的概念设计图</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/2026/%E5%B1%BF%E7%9A%84%E5%95%86%E4%B8%9A%E4%BC%81%E5%88%92/%E5%95%86%E4%B8%9A%E4%BC%81%E5%88%92%E5%B1%BFvslush-%E6%83%85%E7%BB%AA%E6%97%85%E7%A8%8B%E6%9B%B2%E7%BA%BF%E5%9B%BE/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>【商业企划】屿vsLush 情绪旅程曲线图</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share “屿”产品设计要求文档 on x"
+            href="https://x.com/intent/tweet/?text=%e2%80%9c%e5%b1%bf%e2%80%9d%e4%ba%a7%e5%93%81%e8%ae%be%e8%ae%a1%e8%a6%81%e6%b1%82%e6%96%87%e6%a1%a3&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%25B1%25BF%25E4%25BA%25A7%25E5%2593%2581%25E8%25AE%25BE%25E8%25AE%25A1%25E8%25A6%2581%25E6%25B1%2582%25E6%2596%2587%25E6%25A1%25A3%2f&amp;hashtags=%e5%b1%bf">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share “屿”产品设计要求文档 on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%25B1%25BF%25E4%25BA%25A7%25E5%2593%2581%25E8%25AE%25BE%25E8%25AE%25A1%25E8%25A6%2581%25E6%25B1%2582%25E6%2596%2587%25E6%25A1%25A3%2f&amp;title=%e2%80%9c%e5%b1%bf%e2%80%9d%e4%ba%a7%e5%93%81%e8%ae%be%e8%ae%a1%e8%a6%81%e6%b1%82%e6%96%87%e6%a1%a3&amp;summary=%e2%80%9c%e5%b1%bf%e2%80%9d%e4%ba%a7%e5%93%81%e8%ae%be%e8%ae%a1%e8%a6%81%e6%b1%82%e6%96%87%e6%a1%a3&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%25B1%25BF%25E4%25BA%25A7%25E5%2593%2581%25E8%25AE%25BE%25E8%25AE%25A1%25E8%25A6%2581%25E6%25B1%2582%25E6%2596%2587%25E6%25A1%25A3%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share “屿”产品设计要求文档 on reddit"
+            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%25B1%25BF%25E4%25BA%25A7%25E5%2593%2581%25E8%25AE%25BE%25E8%25AE%25A1%25E8%25A6%2581%25E6%25B1%2582%25E6%2596%2587%25E6%25A1%25A3%2f&title=%e2%80%9c%e5%b1%bf%e2%80%9d%e4%ba%a7%e5%93%81%e8%ae%be%e8%ae%a1%e8%a6%81%e6%b1%82%e6%96%87%e6%a1%a3">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share “屿”产品设计要求文档 on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%25B1%25BF%25E4%25BA%25A7%25E5%2593%2581%25E8%25AE%25BE%25E8%25AE%25A1%25E8%25A6%2581%25E6%25B1%2582%25E6%2596%2587%25E6%25A1%25A3%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share “屿”产品设计要求文档 on whatsapp"
+            href="https://api.whatsapp.com/send?text=%e2%80%9c%e5%b1%bf%e2%80%9d%e4%ba%a7%e5%93%81%e8%ae%be%e8%ae%a1%e8%a6%81%e6%b1%82%e6%96%87%e6%a1%a3%20-%20http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%25B1%25BF%25E4%25BA%25A7%25E5%2593%2581%25E8%25AE%25BE%25E8%25AE%25A1%25E8%25A6%2581%25E6%25B1%2582%25E6%2596%2587%25E6%25A1%25A3%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share “屿”产品设计要求文档 on telegram"
+            href="https://telegram.me/share/url?text=%e2%80%9c%e5%b1%bf%e2%80%9d%e4%ba%a7%e5%93%81%e8%ae%be%e8%ae%a1%e8%a6%81%e6%b1%82%e6%96%87%e6%a1%a3&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%25B1%25BF%25E4%25BA%25A7%25E5%2593%2581%25E8%25AE%25BE%25E8%25AE%25A1%25E8%25A6%2581%25E6%25B1%2582%25E6%2596%2587%25E6%25A1%25A3%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share “屿”产品设计要求文档 on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=%e2%80%9c%e5%b1%bf%e2%80%9d%e4%ba%a7%e5%93%81%e8%ae%be%e8%ae%a1%e8%a6%81%e6%b1%82%e6%96%87%e6%a1%a3&u=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f%25E5%25B1%25BF%25E7%259A%2584%25E5%2595%2586%25E4%25B8%259A%25E4%25BC%2581%25E5%2588%2592%2f%25E5%25B1%25BF%25E4%25BA%25A7%25E5%2593%2581%25E8%25AE%25BE%25E8%25AE%25A1%25E8%25A6%2581%25E6%25B1%2582%25E6%2596%2587%25E6%25A1%25A3%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">My Paprika Inn</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

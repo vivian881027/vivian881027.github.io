@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>明亮的星 on My Paprika Inn</title>
+    <link>http://localhost:1313/tags/%E6%98%8E%E4%BA%AE%E7%9A%84%E6%98%9F/</link>
+    <description>Recent content in 明亮的星 on My Paprika Inn</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 06 Apr 2026 23:47:42 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%98%8E%E4%BA%AE%E7%9A%84%E6%98%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>洋桔梗的花语：温柔、长久的陪伴</title>
+      <link>http://localhost:1313/posts/2026/04/%E6%B4%8B%E6%A1%94%E6%A2%97%E7%9A%84%E8%8A%B1%E8%AF%AD%E6%B8%A9%E6%9F%94%E9%95%BF%E4%B9%85%E7%9A%84%E9%99%AA%E4%BC%B4/</link>
+      <pubDate>Mon, 06 Apr 2026 23:47:42 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026/04/%E6%B4%8B%E6%A1%94%E6%A2%97%E7%9A%84%E8%8A%B1%E8%AF%AD%E6%B8%A9%E6%9F%94%E9%95%BF%E4%B9%85%E7%9A%84%E9%99%AA%E4%BC%B4/</guid>
+      <description>独立花店本身充满故事感——它常常是治愈、重生、人际关系或生活美学的载体。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>【行运解读】“单个关键事件”的报告示例 事件4 | My Paprika Inn</title>
+<meta name="keywords" content="Transit, Solar Arc, Secondary Progression">
+<meta name="description" content="那一周之后，你不再是某个家庭的孩子，也不是某个人的恋人。你第一次成为了 “你”本身——一个背着房贷、握着工号、并且拥有自己钥匙的人。">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/2026/04/%E8%A1%8C%E8%BF%90%E8%A7%A3%E8%AF%BB%E5%8D%95%E4%B8%AA%E5%85%B3%E9%94%AE%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%8A%A5%E5%91%8A%E7%A4%BA%E4%BE%8B-%E4%BA%8B%E4%BB%B64/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.030edd63da69018fc5026ae610be3453247856dd7cda87a74678bf9b17de6e11.css" integrity="sha256-Aw7dY9ppAY/FAmrmEL40UyR4Vt182oenRni/mxfebhE=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/2026/04/%E8%A1%8C%E8%BF%90%E8%A7%A3%E8%AF%BB%E5%8D%95%E4%B8%AA%E5%85%B3%E9%94%AE%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%8A%A5%E5%91%8A%E7%A4%BA%E4%BE%8B-%E4%BA%8B%E4%BB%B64/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My Paprika Inn (Alt + H)">My Paprika Inn</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      【行运解读】“单个关键事件”的报告示例 事件4
+    </h1>
+    <div class="post-meta"><span title='2026-04-12 22:01:15 +0800 CST'>2026年4月12日</span>&nbsp;·&nbsp;<span>6 分钟</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><strong>2011年7月16日事件组</strong> 深度心理剖析报告。</p>
+<hr>
+<h3 id="单事件深度报告四重奏的成人礼从父母的孩子到自己的主人">单事件深度报告：四重奏的成人礼——从“父母的孩子”到“自己的主人”<a hidden class="anchor" aria-hidden="true" href="#单事件深度报告四重奏的成人礼从父母的孩子到自己的主人">#</a></h3>
+<p><strong>事件代号：</strong> <code>EV-2011-07-16-CLUSTER</code>
+<strong>事件简述：</strong>
+2011年7月中旬的一周内，案主经历了四件足以定义人生的事件：<strong>大学毕业（身份终结）、与大学男友分手（关系断裂）、入职华为（职业启动）、在公司附近首次买房（根基重建）</strong>。首付款来源于父母离异后分割给案主的一套郊区房产的置换。</p>
+<p><strong>案主核心本命指征（敏感点）：</strong></p>
+<ul>
+<li><strong>本命月亮双子座 4宫：</strong> 情绪安全感建立在“拥有一个属于自己的、可以自由进出的精神与物理空间”上。父母离异的背景，使得4宫月亮对“根基动荡”极度敏感，同时也赋予了用理性切割情感（双子）的生存本能。</li>
+<li><strong>本命木星 4宫：</strong> 原生家庭曾提供过某种膨胀的资源或信念感，但这笔资源在案主成年时注定要被清算、分割或重新定义。</li>
+</ul>
+<hr>
+<h3 id="第一部分三重时间维度下的为何此时发生">第一部分：三重时间维度下的“为何此时发生”<a hidden class="anchor" aria-hidden="true" href="#第一部分三重时间维度下的为何此时发生">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">时间层级</th>
+          <th style="text-align: left">精确相位与度数</th>
+          <th style="text-align: left">心理动力学翻译</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>1. Transit</strong><br><em>(外部事件触发器)</em></td>
+          <td style="text-align: left"><strong>土星</strong>行运于 <strong>本命8宫</strong><br><strong>天王星</strong>行运于 <strong>本命2宫</strong><br><strong>海王星</strong>行运于 <strong>本命1宫</strong><br><strong>火星</strong>四分 <strong>本命莉莉丝</strong> (0°17')</td>
+          <td style="text-align: left"><strong>成年负债的正式开启</strong>。土星进入8宫（他人钱财/债务/遗产），迫使案主必须面对“房贷”这个成年人的枷锁。天王星在2宫（个人价值/收入）则切断了来自家庭的经济脐带。而<strong>火星四分莉莉丝</strong>的极精准相位（0°17&rsquo;），是案主<strong>主动将“父母离异分得的房产”转化为“个人首付”的直接心理按钮——带着家族暗伤（莉莉丝）去行动（火星）。</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>2. Solar Arc</strong><br><em>(内在成熟的必然一步)</em></td>
+          <td style="text-align: left"><strong>SA 冥王星</strong> 二分 <strong>本命木星</strong> (4宫)<br><strong>SA 海王星</strong> 合相 <strong>本命上升轴</strong><br><strong>SA MC</strong> 四分 <strong>本命南北交点</strong></td>
+          <td style="text-align: left"><strong>家族遗产的强制清算与身份溶解</strong>。SA冥王星对准了4宫的木星（家庭膨胀资源），意味着2011年的灵魂课题是：<strong>你必须通过切割原生家庭的物质遗产（卖郊区房），来获得真正的独立</strong>。同时，SA海王星合上升让案主原有的“学生”身份边界溶解，而SA MC四分南北交点则像命运的扳道工，将人生列车强行推向了“华为”这条轨道。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>3. 二次限 (SP)</strong><br><em>(情绪当下的真实处境)</em></td>
+          <td style="text-align: left"><strong>SP 木星</strong> 精准合相 <strong>本命月亮</strong> (双子4宫，0°23&rsquo;)<br><strong>SP 天王星</strong> 合相 <strong>本命土星</strong> (0°43&rsquo;)<br><strong>SP 太阳</strong> 六合 <strong>本命金星</strong> (0°07')</td>
+          <td style="text-align: left"><strong>被神性保护的情绪多线程</strong>。SP木星合相本命月亮，是案主在经历三重重压（分手/入职/买房）时<strong>精神没有崩溃的核心原因</strong>。月亮双子被木星放大，表现为将巨大的情感冲击拆解成多个并行的“信息处理任务”。而SP天王星合本命土星则揭示了内心的真实处境：<strong>旧的结构（大学恋情、学生身份）被强行爆破，新的结构（房贷、工号）正在痛苦地浇筑。</strong> SP太阳六合金星，是价值序列的无声重排——什么更重要，身体已经先于头脑做出了选择。</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="第二部分核心心理主题分析">第二部分：核心心理主题分析<a hidden class="anchor" aria-hidden="true" href="#第二部分核心心理主题分析">#</a></h3>
+<p><strong>主题识别：根基的重铸与情感的分流 (The Reinvention of Root &amp; Emotional Diversion)</strong></p>
+<p><strong>1. 置换的根 (The Transplanted Root)</strong></p>
+<ul>
+<li><strong>征象：</strong> SA冥王星二分本命木星(4宫) + 本命月亮双子4宫。</li>
+<li><strong>事件心理效应：</strong> 买房，在此刻不是一个简单的财务行为，而是一次<strong>强迫性的精神外科手术</strong>。父母离异造成的4宫创伤，使得案主对“家”的归属感始终存在裂隙。通过卖掉那套带有离异烙印的郊区房产，置换为公司附近的公寓，案主完成了一次 <strong>“根的自我移植”</strong> 。心理主题是：<strong>既然原生家庭的根已经分裂，那我就用自己的钱和契约（房贷），重新为自己种下一个绝不会背叛我的根。</strong></li>
+</ul>
+<p><strong>2. 分流的泪 (The Diverted Grief)</strong></p>
+<ul>
+<li><strong>征象：</strong> SP木星合本命月亮双子(4宫) + 行运水星从5宫（恋爱）进入6宫（工作）。</li>
+<li><strong>事件心理效应：</strong> 月亮双子最擅长的事，就是<strong>不给痛苦发单独的签证</strong>。分手、入职、买房这三件事，被月亮双子打包成了一个名为 <strong>“毕业手续”</strong> 的压缩文件。案主在7月16日前后可能表现出惊人的冷静，甚至是一种麻木的高效。这不是冷血，而是月亮双子启动了<strong>情感分流机制</strong>：将分手的心碎暂时存入“待处理”文件夹，将全部CPU让给“签合同”和“搬新家”这两个需要清醒头脑的任务。真正的反刍和悲伤，可能会在搬完家、上完第一周班后的某个深夜，才像潮水一样漫上来。</li>
+</ul>
+<p><strong>3. 独立宣言的背面 (The Shadow of Independence)</strong></p>
+<ul>
+<li><strong>征象：</strong> SP天王星合本命土星(0°43&rsquo;) + 行运天王星在2宫。</li>
+<li><strong>事件心理效应：</strong> 案主可能觉得2011年的自己是“被迫长大”。天王星撞击土星，带来了断裂式的自由，但这种自由里掺杂着对未知的恐惧。入职华为，是选择了土星（最严苛的纪律、最沉重的责任）；分手和买房，是执行了天王星（突然的切割、独立的空间）。这两股力量在案主内心对冲，形成了一个微妙的心理悖论：<strong>我拼命用土星的方式（加班、还贷）来证明自己，只是为了有一天能获得天王星式的自由（不再受制于任何人）。</strong></li>
+</ul>
+<hr>
+<h3 id="第三部分事件时序剖面图">第三部分：事件时序剖面图<a hidden class="anchor" aria-hidden="true" href="#第三部分事件时序剖面图">#</a></h3>
+<p>时间轴：      [2011年7月10-13日]     [2011年7月16日]          [2011年7月27日-未来]
+分手前奏与最后对话       事件核爆点              尘埃落定与情感反刍</p>
+<p>本命地基：   (月亮双子4宫 + 木星4宫 &mdash;- 对“家”的极度敏感，擅长用理性处理情感)</p>
+<pre><code>            ↑                        ↑                          ↑
+</code></pre>
+<p>Transit (触发器)： 冥王星在12宫(业力清算)   火星四分莉莉丝(0°17&rsquo;行动)   太阳进7宫(分手被确认)
+水星离开5宫(恋爱宫)      水星进6宫(签合同)      <br>
+MC四分Asc(0°05&rsquo;身份摩擦)</p>
+<pre><code>            ↑                        ↑                          ↑
+</code></pre>
+<p>Solar Arc (课题)： SA冥王二分木星4宫(清算家庭遗产) &mdash;&ndash; 贯穿2011年全年背景墙 &mdash;&mdash;-→
+SA海王合Asc(身份溶解)    SA MC四分交点(命运扳道)</p>
+<pre><code>            ↑                        ↑                          ↑
+</code></pre>
+<p>SP (情绪底色)：   SP木星合月亮(0°23&rsquo;) &mdash;&ndash; 情绪被神性保护，多线程并行处理 &mdash;&mdash;-→
+SP天王合土星(0°43&rsquo;) &mdash;&ndash; 结构的断裂与被迫重建 &mdash;&mdash;-→</p>
+<p>三者汇交于一点： 用一套写着自己名字的房子、一份严苛的工作、和一次彻底的告别，来完成从“父母的孩子”到“自己的主人”的身份交割。</p>
+<hr>
+<h3 id="第四部分事件专属疗愈启示">第四部分：事件专属疗愈启示<a hidden class="anchor" aria-hidden="true" href="#第四部分事件专属疗愈启示">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">占星征象提示</th>
+          <th style="text-align: left"><strong>禁止做的事 (反指征)</strong></th>
+          <th style="text-align: left"><strong>建议做的事 (正指征)</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>SP木星合本命月亮双子4宫</strong></td>
+          <td style="text-align: left">因为当时表现得很冷静，就在日后责怪自己“是不是太冷血了”。这不是冷血，是月双子独有的生存智慧。</td>
+          <td style="text-align: left">如果至今还没为那场分手认真难过过，可以找一个安全的下午，把2011年夏天的歌再听一遍。让月亮双子允许那些被“暂存”的情绪完成它们的旅程。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>SA冥王星二分本命木星4宫</strong></td>
+          <td style="text-align: left">把华为附近的那套房子仅仅看作“资产”或“负担”。这低估了它的心理意义。</td>
+          <td style="text-align: left"><strong>重新定义这套房子</strong>。它是你为自己建立的第一块精神飞地。试着在房间里增加一个完全属于你个人趣味的角落——这是对4宫月亮迟到的滋养。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>SP天王星合本命土星</strong></td>
+          <td style="text-align: left">后悔2011年的选择，幻想“如果当时没分手/没去华为会怎样”。这种假设会加剧天王星与土星的内耗。</td>
+          <td style="text-align: left">感谢那个23岁的自己。在土星（责任）和天王星（自由）的双重碾压下，你没有逃跑，你选择了两者都要——用最不自由的方式（房贷/狼性文化），去换取最根本的自由（经济与人格独立）。</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>结论：</strong></p>
+<p>2011年7月16日这一周的事件集群，并非命运随机的“水逆”或“倒霉”，而是宇宙针对案主 <strong>“原生家庭根基裂隙”</strong> 与 <strong>“过度依赖理性防御”</strong> 的一次<strong>系统性毕业大考</strong>。</p>
+<p>SA冥王星（清算）、Transit土星（成年债务）、SP天王星（结构爆破）联手拆掉了案主身后的脚手架。而 <strong>SP木星合相本命月亮双子4宫</strong> 的极精准相位，则是案主在这场风暴中<strong>没有坠落、反而完成了一次漂亮的三线程并行操作</strong>的神性护盾。</p>
+<p>那一周之后，你不再是某个家庭的孩子，也不是某个人的恋人。你第一次成为了 <strong>“你”本身</strong>——一个背着房贷、握着工号、并且拥有自己钥匙的人。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/transit/">Transit</a></li>
+      <li><a href="http://localhost:1313/tags/solar-arc/">Solar Arc</a></li>
+      <li><a href="http://localhost:1313/tags/secondary-progression/">Secondary Progression</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/2026/04/%E8%A1%8C%E8%BF%90%E8%A7%A3%E8%AF%BB%E5%8D%95%E4%B8%AA%E5%85%B3%E9%94%AE%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%8A%A5%E5%91%8A%E7%A4%BA%E4%BE%8B-%E4%BA%8B%E4%BB%B65/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>【行运解读】“单个关键事件”的报告示例 事件5</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/2026/04/%E8%A1%8C%E8%BF%90%E8%A7%A3%E8%AF%BB%E5%8D%95%E4%B8%AA%E5%85%B3%E9%94%AE%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%8A%A5%E5%91%8A%E7%A4%BA%E4%BE%8B-%E4%BA%8B%E4%BB%B63/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>【行运解读】“单个关键事件”的报告示例 事件3</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【行运解读】“单个关键事件”的报告示例 事件4 on x"
+            href="https://x.com/intent/tweet/?text=%e3%80%90%e8%a1%8c%e8%bf%90%e8%a7%a3%e8%af%bb%e3%80%91%e2%80%9c%e5%8d%95%e4%b8%aa%e5%85%b3%e9%94%ae%e4%ba%8b%e4%bb%b6%e2%80%9d%e7%9a%84%e6%8a%a5%e5%91%8a%e7%a4%ba%e4%be%8b%20%e4%ba%8b%e4%bb%b64&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f04%2f%25E8%25A1%258C%25E8%25BF%2590%25E8%25A7%25A3%25E8%25AF%25BB%25E5%258D%2595%25E4%25B8%25AA%25E5%2585%25B3%25E9%2594%25AE%25E4%25BA%258B%25E4%25BB%25B6%25E7%259A%2584%25E6%258A%25A5%25E5%2591%258A%25E7%25A4%25BA%25E4%25BE%258B-%25E4%25BA%258B%25E4%25BB%25B64%2f&amp;hashtags=Transit%2cSolarArc%2cSecondaryProgression">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【行运解读】“单个关键事件”的报告示例 事件4 on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f04%2f%25E8%25A1%258C%25E8%25BF%2590%25E8%25A7%25A3%25E8%25AF%25BB%25E5%258D%2595%25E4%25B8%25AA%25E5%2585%25B3%25E9%2594%25AE%25E4%25BA%258B%25E4%25BB%25B6%25E7%259A%2584%25E6%258A%25A5%25E5%2591%258A%25E7%25A4%25BA%25E4%25BE%258B-%25E4%25BA%258B%25E4%25BB%25B64%2f&amp;title=%e3%80%90%e8%a1%8c%e8%bf%90%e8%a7%a3%e8%af%bb%e3%80%91%e2%80%9c%e5%8d%95%e4%b8%aa%e5%85%b3%e9%94%ae%e4%ba%8b%e4%bb%b6%e2%80%9d%e7%9a%84%e6%8a%a5%e5%91%8a%e7%a4%ba%e4%be%8b%20%e4%ba%8b%e4%bb%b64&amp;summary=%e3%80%90%e8%a1%8c%e8%bf%90%e8%a7%a3%e8%af%bb%e3%80%91%e2%80%9c%e5%8d%95%e4%b8%aa%e5%85%b3%e9%94%ae%e4%ba%8b%e4%bb%b6%e2%80%9d%e7%9a%84%e6%8a%a5%e5%91%8a%e7%a4%ba%e4%be%8b%20%e4%ba%8b%e4%bb%b64&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f04%2f%25E8%25A1%258C%25E8%25BF%2590%25E8%25A7%25A3%25E8%25AF%25BB%25E5%258D%2595%25E4%25B8%25AA%25E5%2585%25B3%25E9%2594%25AE%25E4%25BA%258B%25E4%25BB%25B6%25E7%259A%2584%25E6%258A%25A5%25E5%2591%258A%25E7%25A4%25BA%25E4%25BE%258B-%25E4%25BA%258B%25E4%25BB%25B64%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【行运解读】“单个关键事件”的报告示例 事件4 on reddit"
+            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f04%2f%25E8%25A1%258C%25E8%25BF%2590%25E8%25A7%25A3%25E8%25AF%25BB%25E5%258D%2595%25E4%25B8%25AA%25E5%2585%25B3%25E9%2594%25AE%25E4%25BA%258B%25E4%25BB%25B6%25E7%259A%2584%25E6%258A%25A5%25E5%2591%258A%25E7%25A4%25BA%25E4%25BE%258B-%25E4%25BA%258B%25E4%25BB%25B64%2f&title=%e3%80%90%e8%a1%8c%e8%bf%90%e8%a7%a3%e8%af%bb%e3%80%91%e2%80%9c%e5%8d%95%e4%b8%aa%e5%85%b3%e9%94%ae%e4%ba%8b%e4%bb%b6%e2%80%9d%e7%9a%84%e6%8a%a5%e5%91%8a%e7%a4%ba%e4%be%8b%20%e4%ba%8b%e4%bb%b64">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【行运解读】“单个关键事件”的报告示例 事件4 on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f04%2f%25E8%25A1%258C%25E8%25BF%2590%25E8%25A7%25A3%25E8%25AF%25BB%25E5%258D%2595%25E4%25B8%25AA%25E5%2585%25B3%25E9%2594%25AE%25E4%25BA%258B%25E4%25BB%25B6%25E7%259A%2584%25E6%258A%25A5%25E5%2591%258A%25E7%25A4%25BA%25E4%25BE%258B-%25E4%25BA%258B%25E4%25BB%25B64%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【行运解读】“单个关键事件”的报告示例 事件4 on whatsapp"
+            href="https://api.whatsapp.com/send?text=%e3%80%90%e8%a1%8c%e8%bf%90%e8%a7%a3%e8%af%bb%e3%80%91%e2%80%9c%e5%8d%95%e4%b8%aa%e5%85%b3%e9%94%ae%e4%ba%8b%e4%bb%b6%e2%80%9d%e7%9a%84%e6%8a%a5%e5%91%8a%e7%a4%ba%e4%be%8b%20%e4%ba%8b%e4%bb%b64%20-%20http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f04%2f%25E8%25A1%258C%25E8%25BF%2590%25E8%25A7%25A3%25E8%25AF%25BB%25E5%258D%2595%25E4%25B8%25AA%25E5%2585%25B3%25E9%2594%25AE%25E4%25BA%258B%25E4%25BB%25B6%25E7%259A%2584%25E6%258A%25A5%25E5%2591%258A%25E7%25A4%25BA%25E4%25BE%258B-%25E4%25BA%258B%25E4%25BB%25B64%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【行运解读】“单个关键事件”的报告示例 事件4 on telegram"
+            href="https://telegram.me/share/url?text=%e3%80%90%e8%a1%8c%e8%bf%90%e8%a7%a3%e8%af%bb%e3%80%91%e2%80%9c%e5%8d%95%e4%b8%aa%e5%85%b3%e9%94%ae%e4%ba%8b%e4%bb%b6%e2%80%9d%e7%9a%84%e6%8a%a5%e5%91%8a%e7%a4%ba%e4%be%8b%20%e4%ba%8b%e4%bb%b64&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f04%2f%25E8%25A1%258C%25E8%25BF%2590%25E8%25A7%25A3%25E8%25AF%25BB%25E5%258D%2595%25E4%25B8%25AA%25E5%2585%25B3%25E9%2594%25AE%25E4%25BA%258B%25E4%25BB%25B6%25E7%259A%2584%25E6%258A%25A5%25E5%2591%258A%25E7%25A4%25BA%25E4%25BE%258B-%25E4%25BA%258B%25E4%25BB%25B64%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 【行运解读】“单个关键事件”的报告示例 事件4 on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=%e3%80%90%e8%a1%8c%e8%bf%90%e8%a7%a3%e8%af%bb%e3%80%91%e2%80%9c%e5%8d%95%e4%b8%aa%e5%85%b3%e9%94%ae%e4%ba%8b%e4%bb%b6%e2%80%9d%e7%9a%84%e6%8a%a5%e5%91%8a%e7%a4%ba%e4%be%8b%20%e4%ba%8b%e4%bb%b64&u=http%3a%2f%2flocalhost%3a1313%2fposts%2f2026%2f04%2f%25E8%25A1%258C%25E8%25BF%2590%25E8%25A7%25A3%25E8%25AF%25BB%25E5%258D%2595%25E4%25B8%25AA%25E5%2585%25B3%25E9%2594%25AE%25E4%25BA%258B%25E4%25BB%25B6%25E7%259A%2584%25E6%258A%25A5%25E5%2591%258A%25E7%25A4%25BA%25E4%25BE%258B-%25E4%25BA%258B%25E4%25BB%25B64%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">My Paprika Inn</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
