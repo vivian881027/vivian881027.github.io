@@ -4,7 +4,7 @@ draft = false
 title = '【土星行运】撑伞的人 Saturn Story Line 2020 2022 in Kuala Lumpur —— 土星行运1宫全纪录'
 tags = ["土星回归"]
 categories = ["Astro Fragments"]
-summary = ""
+summary = "2020-2022年在吉隆坡的土星1宫行运，教会案主的不是如何获得快乐，而是如何在不确定的大雨中，依然撑稳自己的伞。"
 +++
 
 # Saturn Story Line 2020-2022 in Kuala Lumpur
